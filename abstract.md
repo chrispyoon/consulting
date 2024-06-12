@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "Methodology"
+title: "Abstract"
 ---
 
 <div class="content-section bg-light">
   <div class="container">
-    <h2>Methodology</h2>
+    <h2>Abstract</h2>
     <p>
-      The study employs a mixed-methods approach, combining quantitative and qualitative data analysis. It utilizes sentiment analysis and thematic analysis of Naver blog posts to gauge public opinion on North Korean defectors. The data is processed using various NLP techniques, including sentiment analysis with VADER and thematic analysis with BERT.
+      This study investigates the impact of public sentiment and thematic narratives on the life satisfaction of North Korean defectors within the framework of Conditional Inclusion. This framework posits that societal acceptance depends on perceived utility and conformity to norms. By analyzing blog posts from 2014 to 2023, the research examines how different themes and sentiments influence the well-being and societal integration of defectors in South Korea.
     </p>
     <p>
-      The research also includes a Multiple Linear Regression (MLR) analysis to understand the impact of economic satisfaction and media representation on the social life satisfaction of defectors. The MLR model incorporates variables such as economic stability, media portrayal, and personal experiences to provide a comprehensive view of the factors influencing defectors' integration.
+      The findings demonstrate that while positive sentiment and empowering narratives contribute to the life satisfaction and societal acceptance of defectors, their integration remains governed by conditional inclusion. To foster genuine acceptance and well-being for North Korean defectors, future research should address broader societal attitudes and policies that support unconditional integration, recognizing their inherent worth and diverse contributions.
     </p>
   </div>
 </div>
