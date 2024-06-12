@@ -3,14 +3,6 @@ layout: default
 title: "Home"
 ---
 
-<div class="hero bg-primary text-white text-center py-5">
-  <div class="container">
-    <h1 class="display-4">"Beyond Conditional Inclusion"</h1>
-    <p class="lead">Exploring the integration and experiences of North Korean defectors in South Korean</p>
-    <a href="mailto:yoond@lafayette.edu" class="btn btn-custom mt-4 mb-2">Contact</a>
-  </div>
-</div>
-
 <div class="content-section bg-light">
   <div class="container">
     <h2>Overview</h2>
