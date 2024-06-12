@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Findings"
+title: "Results"
 ---
 
 <div class="content-section bg-light">
   <div class="container">
-    <h2>Findings</h2>
+    <h2>Results</h2>
     <p>
       The findings from the analysis reveal significant insights into the experiences of North Korean defectors in South Korea. The data suggests that defectors often face conditional inclusion, where their acceptance and integration into society are contingent upon meeting certain economic and social expectations.
     </p>
