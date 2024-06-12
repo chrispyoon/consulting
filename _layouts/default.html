@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body style="font-family: 'Poppins', sans-serif;">
+  <!-- Hero Section -->
+  <header class="hero text-white text-center py-5" style="background-color: #1e2a38;">
+    <div class="container">
+      <h1 class="display-4">Beyond Conditional Inclusion</h1>
+      <p class="subtitle">The Role of Public Discourse in the Life Satisfaction of North Korean Defectors</p>
+      <a href="mailto:yoond@lafayette.edu" class="btn btn-custom mt-3 mb-2">Contact</a>
+    </div>
+  </header>
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="{{ "/" | relative_url }}">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/introduction" | relative_url }}">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/methodology" | relative_url }}">Methodology</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/findings" | relative_url }}">Results</a></li>
+          <li class="nav-item"><a class="nav-link" 
+href="{{ "/discussion" | relative_url }}">Discussion</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/conclusion" | relative_url }}">Limitations</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/research" | relative_url }}">Research Paper</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main Content -->
+  <main class="container py-5">
+    {{ content }}
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Chris Dongjoon Yoon. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/your-github" class="text-white mr-3"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your-twitter" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/your-linkedin" class="text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

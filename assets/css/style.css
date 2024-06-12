@@ -1,0 +1,49 @@
+/* Custom styles for the hero section and contact button */
+.hero {
+  position: relative;
+  background-color: #1e2a38; /* Use a cool, professional background color */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  height: 60vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Stack the elements vertically */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  margin-bottom: 10px; /* Add some space below the main title */
+}
+
+.subtitle {
+  font-size: 1.5rem; /* Adjust the font size for the subtitle */
+  font-weight: 300; /* Lighten the font weight for a subtler look */
+  color: #dcdcdc; /* A lighter color to differentiate from the main title */
+  margin-bottom: 20px; /* Add space below the subtitle */
+}
+
+/* Smaller and more stylish button */
+.btn-custom {
+  background-color: #4db8ff; /* Light cyan color */
+  border: none;
+  color: #fff;
+  padding: 8px 16px; /* Reduce padding to make the button smaller */
+  font-size: 1rem; /* Reduce font size */
+  text-transform: uppercase;
+  border-radius: 25px; /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #00acee; /* Slightly darker cyan color on hover */
+}
+
+header.hero .btn-custom {
+  margin-top: 20px; /* Space above the button */
+  margin-bottom: 0; /* Remove extra space below the button */
+}
