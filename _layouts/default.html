@@ -2,17 +2,8 @@
 <html lang="en">
 {% include head.html %}
 <body style="font-family: 'Poppins', sans-serif;">
-  <!-- Hero Section -->
-  <header class="hero text-white text-center py-5" style="background-color: #1e2a38;">
-    <div class="container">
-      <h1 class="display-4">Beyond Conditional Inclusion</h1>
-      <p class="subtitle">The Role of Public Discourse in the Life Satisfaction of North Korean Defectors</p>
-      <a href="mailto:yoond@lafayette.edu" class="btn btn-custom mt-3 mb-2">Contact</a>
-    </div>
-  </header>
-  
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,19 +11,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="{{ "/" | relative_url }}">Overview</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ "/abstract" | relative_url }}">Abstract</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/" | relative_url }}">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ "/introduction" | relative_url }}">Introduction</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ "/methodology" | relative_url }}">Methodology</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ "/results" | relative_url }}">Results</a></li>
           <li class="nav-item"><a class="nav-link" href="{{ "/discussion" | relative_url }}">Discussion</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ "/limitations" | relative_url }}">Limitations</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ "/research" | relative_url }}">Paper</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ "/research" | relative_url }}">Research Paper</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  
+
+  <!-- Hero Section -->
+  <header class="hero text-white text-center py-5" style="background: url('/assets/images/hero-bg.jpg') no-repeat center center; background-size: cover;">
+    <div class="container">
+      <h1 class="display-4">"Beyond Conditional Inclusion"</h1>
+      <p class="subtitle">Exploring the narratives and integration of North Korean defectors in South Korean society</p>
+      <a href="mailto:yoond@lafayette.edu" class="btn btn-custom mt-4 mb-2">Contact</a>
+    </div>
+  </header>
+
   <!-- Main Content -->
   <main class="container py-5">
     {{ content }}
