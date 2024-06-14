@@ -23,10 +23,10 @@
 
 /* Sub-title styling */
 .hero-content h1 .sub-title {
-  display: block !important; /* Ensure the sub-title is on its own line */
+  display: block !important; /* Ensure it is on its own line */
   font-size: 1.5em !important; /* Slightly smaller font size */
   color: #666 !important; /* Medium grey color for text */
-  margin-top: 0.5em !important; /* Space between main title and sub-title */
+  margin-top: 0.5em !important; /* Small space between main title and sub-title */
 }
 
 /* Contact link styling */
