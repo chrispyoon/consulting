@@ -1,16 +1,36 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Hero Section */
 .hero {
   height: 100vh; /* Full screen height */
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center; /* Replace with your image path */
+  background-size: cover;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
 .hero .container {
   text-align: center;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .hero .subtitle {
@@ -67,6 +87,29 @@
   color: #333;
 }
 
+/* Horizontal Scrolling Section */
+.horizontal-section {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-section .slide {
+  min-width: 100vw;
+  scroll-snap-align: start;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.horizontal-section .slide:nth-child(even) {
+  background-color: #f8f9fa; /* Alternating background colors */
+}
+
+.horizontal-section .slide:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
 /* Footer */
 .footer {
   background-color: #1e2a38;
@@ -82,4 +125,46 @@
 
 .footer .social-links a:hover {
   color: #00acee;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional Custom Styles */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.main-content {
+  padding: 60px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* Adjust hero section height for smaller screens */
+  }
+
+  .hero .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
 }
