@@ -21,25 +21,25 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/hero-bg.jpg') no-repeat center center;
+  background: url('/assets/images/background.gif') no-repeat center center;
   background-size: cover;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   position: relative;
+  text-align: center;
+  color: white;
+  transition: opacity 0.5s ease-out;
 }
 
-.hero .container {
-  text-align: center;
+.hero-content {
   z-index: 2;
 }
 
-.hero .subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-  margin-top: 10px;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.btn-custom {
+.hero .btn-custom {
   background-color: #4db8ff;
   border: none;
   color: #fff;
@@ -49,7 +49,7 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-.btn-custom:hover {
+.hero .btn-custom:hover {
   background-color: #00acee;
 }
 
@@ -113,64 +113,58 @@ a:hover {
 .footer {
   background-color: #1e2a38;
   color: white;
-  padding: 20px 0;
-}
+To integrate a full-screen GIF background on your homepage with a central title and a contact button, and have this section disappear when the page is scrolled, follow these steps. Here's the updated and complete code for your `index.md`, `_layouts/default.html`, and CSS.
 
-.footer .social-links a {
-  color: white;
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
+### 1. Combined Content in `index.md`
 
-.footer .social-links a:hover {
-  color: #00acee;
-}
+Your `index.md` file will include all the sections for Home, Introduction, Methodology, Results, Discussion, and Research Paper:
 
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
+```markdown
+---
+layout: default
+title: Home
+---
 
-/* Additional Custom Styles */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: 1;
-}
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1>Conditional Inclusion: Case for North Korean Defectors</h1>
+    <a href="mailto:yoond@lafayette.edu" class="btn btn-custom">Contact</a>
+  </div>
+</section>
 
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
+<!-- Main Content Sections -->
+<section id="introduction" class="section">
+  <div class="container">
+    <h2>Introduction</h2>
+    <p>The introduction content goes here...</p>
+  </div>
+</section>
 
-.main-content {
-  padding: 60px 0;
-}
+<section id="methodology" class="section">
+  <div class="container">
+    <h2>Methodology</h2>
+    <p>The methodology content goes here...</p>
+  </div>
+</section>
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh; /* Adjust hero section height for smaller screens */
-  }
+<section id="results" class="section">
+  <div class="container">
+    <h2>Results</h2>
+    <p>The results content goes here...</p>
+  </div>
+</section>
 
-  .hero .subtitle {
-    font-size: 1.2rem;
-  }
+<section id="discussion" class="section">
+  <div class="container">
+    <h2>Discussion</h2>
+    <p>The discussion content goes here...</p>
+  </div>
+</section>
 
-  .btn-custom {
-    font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-
-  .navbar-light .navbar-nav .nav-link.active {
-    border-radius: 0; /* Remove rounded corners for active links on small screens */
-    background-color: #4db8ff;
-    color: white;
-    padding: 0.5em 1em;
-  }
-}
+<section id="research" class="section">
+  <div class="container">
+    <h2>Research Paper</h2>
+    <p>The research paper content goes here...</p>
+  </div>
+</section>
