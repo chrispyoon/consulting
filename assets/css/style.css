@@ -1,49 +1,85 @@
-/* Custom styles for the hero section and contact button */
+/* Hero Section */
 .hero {
-  position: relative;
-  background-color: #1e2a38; /* Use a cool, professional background color */
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  height: 60vh; /* Adjust the height as needed */
+  height: 100vh; /* Full screen height */
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* Stack the elements vertically */
+  position: relative;
 }
 
 .hero .container {
-  position: relative;
-  z-index: 2;
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 {
-  margin-bottom: 10px; /* Add some space below the main title */
+.hero .subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
 }
 
-.subtitle {
-  font-size: 1.5rem; /* Adjust the font size for the subtitle */
-  font-weight: 300; /* Lighten the font weight for a subtler look */
-  color: #dcdcdc; /* A lighter color to differentiate from the main title */
-  margin-bottom: 20px; /* Add space below the subtitle */
-}
-
-/* Smaller and more stylish button */
 .btn-custom {
   background-color: #4db8ff; /* Light cyan color */
   border: none;
   color: #fff;
-  padding: 8px 16px; /* Reduce padding to make the button smaller */
-  font-size: 1rem; /* Reduce font size */
-  text-transform: uppercase;
-  border-radius: 25px; /* Rounded corners for a modern look */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 
 .btn-custom:hover {
-  background-color: #00acee; /* Slightly darker cyan color on hover */
+  background-color: #00acee; /* Slightly darker cyan */
 }
 
-header.hero .btn-custom {
-  margin-top: 20px; /* Space above the button */
-  margin-bottom: 0; /* Remove extra space below the button */
+/* Navigation */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-light .navbar-brand {
+  color: #4db8ff;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #4db8ff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #00acee;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e2a38;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer .social-links a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.footer .social-links a:hover {
+  color: #00acee;
 }
