@@ -21,7 +21,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
+  background: url('/defectorinclusion/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
   background-size: cover;
   position: relative;
   text-align: center;
