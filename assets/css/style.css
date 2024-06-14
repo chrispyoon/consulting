@@ -33,6 +33,20 @@ a:hover {
   z-index: 2;
 }
 
+.hero-heading {
+  font-size: 3rem; /* Base size for h1 */
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+.hero-subheading {
+  font-size: 2.4rem; /* 80% of the h1 size */
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
 .hero h1 {
   font-size: 3rem;
   font-weight: 700;
