@@ -17,16 +17,16 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/background.gif') no-repeat center center;
+  background: url('/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
   background-size: cover;
   position: relative;
   text-align: center;
   color: white;
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
 }
 
 .hero-content {
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .hero .btn-custom {
-  background-color: #4db8ff;
+  background-color: #4db8ff; /* Light cyan button */
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -50,9 +50,8 @@ a:hover {
 }
 
 .hero .btn-custom:hover {
-  background-color: #00acee;
+  background-color: #00acee; /* Darker cyan on hover */
 }
-
 /* Navigation */
 .navbar {
   transition: background-color 0.3s ease;
