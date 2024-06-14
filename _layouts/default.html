@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defector Inclusion Research</title>
-  <link rel="stylesheet" href="/defectorinclusion/assets/css/style.css">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -13,7 +13,7 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#home">Defector Inclusion Research</a>
+      <a class="navbar-brand" href="#home">{{ site.title }}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,8 +33,8 @@
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-content">
-      <h1>"Conditional Inclusion: Case for North Korean Defectors"</h1>
-      <a href="mailto:yoond@lafayette.edu" class="contact-link mt-4 mb-2">Contact</a>
+      <h1>Unveiling Exclusion through Machine Learning Analysis: Case for North Korean Defectors</h1>
+      <a href="mailto:yoond@lafayette.edu" class="btn btn-custom mt-4 mb-2">Contact</a>
     </div>
   </section>
 
@@ -79,190 +79,13 @@
       window.addEventListener('scroll', function() {
         const hero = document.getElementById('hero');
         if (window.scrollY > 100) {
-          hero.styleTo ensure the GIF image `blackwhitebgimg.gif` is displayed as the background of the hero section and to improve the design with a nice contact link, follow these steps:
-
-### Steps to Implement the Background GIF and Update Design
-
-1. **Place the GIF File in the Correct Directory**:
-   - Ensure the `blackwhitebgimg.gif` file is in the `assets/images/` directory of your Jekyll project.
-
-2. **Update CSS for the Hero Section**:
-   - Use CSS to set the GIF as the background image of the hero section.
-
-3. **Adjust the HTML Structure**:
-   - Make sure the HTML structure in `_layouts/default.html` references the correct CSS and provides the appropriate hero section setup.
-
-### Updated CSS for the Hero Section
-
-Add or modify the CSS in your `assets/css/style.css` file to include the GIF background and style the contact link:
-
-```css
-/* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh; /* Full viewport height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url('/defectorinclusion/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
-}
-
-.hero-content {
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-}
-
-/* Contact Link Style */
-.contact-link {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ff6600; /* Orange color for the contact link */
-  transition: color 0.3s ease;
-  padding: 10px;
-}
-
-.contact-link:hover {
-  color: #e65c00; /* Darker orange on hover */
-}
-
-/* Navigation */
-.navbar {
-  transition: background-color 0.3s ease;
-}
-
-.navbar-light .navbar-brand {
-  color: #4db8ff;
-  font-weight: bold;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #4db8ff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #00acee;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-  background-color: #4db8ff;
-  color: white;
-  border-radius: 25px;
-  padding: 0.5em 1em;
-}
-
-/* Section Styles */
-.section {
-  padding: 60px 0;
-  transition: background-color 0.3s ease;
-}
-
-#home {
-  background-color: #ffffff;
-}
-
-#introduction {
-  background-color: #f9f9f9;
-}
-
-#methodology {
-  background-color: #e9ecef;
-}
-
-#results {
-  background-color: #dee2e6;
-}
-
-#discussion {
-  background-color: #ced4da;
-}
-
-#research {
-  background-color: #adb5bd;
-}
-
-/* Footer */
-.footer {
-  background-color: #1e2a38;
-  color: white;
-  padding: 20px 0;
-}
-
-.footer .social-links a {
-  color: white;
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
-
-.footer .social-links a:hover {
-  color: #00acee;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Additional Custom Styles */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.main-content {
-  padding: 60px 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh; /* Adjust hero section height for smaller screens */
-  }
-
-  .hero h1 {
-    font-size: 2rem; /* Adjust title size for smaller screens */
-  }
-
-  .contact-link {
-    font-size: 1rem;
-    padding: 8px;
-  }
-}
+          hero.style.opacity = '0';
+          hero.style.transition = 'opacity 0.5s ease-out';
+        } else {
+          hero.style.opacity = '1';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
