@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; /* Reverting to Poppins for a cleaner look */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
+  background: url('/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Correct GIF path */
   background-size: cover;
   position: relative;
   text-align: center;
@@ -34,31 +34,33 @@ a:hover {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3rem; /* Adjust as needed for better visibility */
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .hero .btn-custom {
-  background-color: #4db8ff; /* Light cyan button */
+  background-color: #28a745; /* Green button for a more modern look */
   border: none;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 30px; /* Slightly wider for better design */
   font-size: 1rem;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
+  border-radius: 50px; /* Rounded button */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .hero .btn-custom:hover {
-  background-color: #00acee; /* Darker cyan on hover */
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly larger on hover for effect */
 }
+
 /* Navigation */
 .navbar {
   transition: background-color 0.3s ease;
 }
 
 .navbar-light .navbar-brand {
-  color: #4db8ff;
+  color: #4db8ff; /* Light cyan for branding */
   font-weight: bold;
 }
 
@@ -68,7 +70,7 @@ a:hover {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #00acee;
+  color: #00acee; /* Darker cyan on hover */
 }
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -112,58 +114,19 @@ a:hover {
 .footer {
   background-color: #1e2a38;
   color: white;
-To integrate a full-screen GIF background on your homepage with a central title and a contact button, and have this section disappear when the page is scrolled, follow these steps. Here's the updated and complete code for your `index.md`, `_layouts/default.html`, and CSS.
+  padding: 20px 0;
+}
 
-### 1. Combined Content in `index.md`
+.footer .social-links a {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
 
-Your `index.md` file will include all the sections for Home, Introduction, Methodology, Results, Discussion, and Research Paper:
+.footer .social-links a:hover {
+  color: #00acee;
+}
 
-```markdown
----
-layout: default
-title: Home
----
-
-<!-- Hero Section -->
-<section id="hero" class="hero">
-  <div class="hero-content">
-    <h1>Conditional Inclusion: Case for North Korean Defectors</h1>
-    <a href="mailto:yoond@lafayette.edu" class="btn btn-custom">Contact</a>
-  </div>
-</section>
-
-<!-- Main Content Sections -->
-<section id="introduction" class="section">
-  <div class="container">
-    <h2>Introduction</h2>
-    <p>The introduction content goes here...</p>
-  </div>
-</section>
-
-<section id="methodology" class="section">
-  <div class="container">
-    <h2>Methodology</h2>
-    <p>The methodology content goes here...</p>
-  </div>
-</section>
-
-<section id="results" class="section">
-  <div class="container">
-    <h2>Results</h2>
-    <p>The results content goes here...</p>
-  </div>
-</section>
-
-<section id="discussion" class="section">
-  <div class="container">
-    <h2>Discussion</h2>
-    <p>The discussion content goes here...</p>
-  </div>
-</section>
-
-<section id="research" class="section">
-  <div class="container">
-    <h2>Research Paper</h2>
-    <p>The research paper content goes here...</p>
-  </div>
-</section>
+/* Smooth Scrolling */
+html {
+  scroll-be
