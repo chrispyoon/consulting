@@ -37,20 +37,20 @@ a:hover {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
-/* Contact Link Style */
-.contact-link {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ff6600; /* Orange color for the contact link */
-  transition: color 0.3s ease;
-  padding: 10px;
+.hero .btn-custom {
+  background-color: #4db8ff; /* Light cyan button */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
 }
 
-.contact-link:hover {
-  color: #e65c00; /* Darker orange on hover */
+.hero .btn-custom:hover {
+  background-color: #00acee; /* Darker cyan on hover */
 }
 
 /* Navigation */
@@ -162,8 +162,8 @@ html {
     font-size: 2rem; /* Adjust title size for smaller screens */
   }
 
-  .contact-link {
-    font-size: 1rem;
-    padding: 8px;
+  .hero .btn-custom {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
