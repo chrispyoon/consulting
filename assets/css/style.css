@@ -1,217 +1,49 @@
-/* General Styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh; /* Full viewport height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url('/defectorinclusion/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
-  background-size: cover;
-  position: relative;
-  text-align: center;
-  color: white;
-  transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
-}
-
-.hero-content {
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-}
-
-/* Contact Link Style */
-.contact-link {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ff6600; /* Orange color for the contact link */
-  transition: color 0.3s ease;
-  padding: 10px;
-}
-
-.contact-link:hover {
-  color: #e65c00; /* Darker orange on hover */
-}
-
-/* Navigation */
-.navbar {
-  transition: background-color 0.3s ease;
-}
-
-.navbar-light .navbar-brand {
-  color: #4db8ff;
-  font-weight: bold;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #4db8ff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #00acee;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-  background-color: #4db8ff;
-  color: white;
-  border-radius: 25px;
-  padding: 0.5em 1em;
-}
-
-/* General hero section styling */
+/* General styling for the hero section */
 .hero {
   background-color: #f5f5f5; /* Light grey background */
   padding: 50px 0; /* Vertical padding for spacing */
   text-align: center; /* Center the text within the hero section */
 }
 
-/* Hero content styling */
+/* Hero content container styling */
 .hero-content {
   max-width: 800px; /* Limit the maximum width of the content */
   margin: 0 auto; /* Center the content horizontally */
+  text-align: center; /* Ensure the content is centered */
 }
 
 /* Main title styling */
-.main-title {
-  display: block; /* Ensure it is on its own line */
+.hero-content h1 .main-title {
+  display: block; /* Ensure the main title is on its own line */
   font-size: 2.5em; /* Larger font size for emphasis */
-  font-weight: bold; /* Bold text */
+  font-weight: bold; /* Bold text for prominence */
   color: #333; /* Dark grey color for text */
+  margin-bottom: 0.2em; /* Small margin to separate from the sub-title */
 }
 
 /* Sub-title styling */
-.sub-title {
-  display: block; /* Ensure it is on its own line */
-  font-size: 1.5em; /* Slightly smaller font size */
-  color: #666; /* Medium grey color for text */
-  margin-top: 0.5em; /* Small space between main title and sub-title */
+.hero-content h1 .sub-title {
+  display: block !important; /* Ensure the sub-title is on its own line */
+  font-size: 1.5em !important; /* Slightly smaller font size */
+  color: #666 !important; /* Medium grey color for text */
+  margin-top: 0.5em !important; /* Space between main title and sub-title */
 }
 
 /* Contact link styling */
 .contact-link {
-  display: inline-block; /* Inline block to allow margin adjustments */
+  display: inline-block; /* Keep the contact link inline but separate it from text */
   margin-top: 20px; /* Space above the link */
   padding: 10px 20px; /* Padding for better clickable area */
   font-size: 1.2em; /* Slightly larger font size for emphasis */
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; /* Remove underline from link */
   color: #007BFF; /* Blue color for the link */
   border: 2px solid #007BFF; /* Border to make the link stand out */
   border-radius: 5px; /* Rounded corners for the link */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-/* Hover effect for contact link */
+/* Hover effect for the contact link */
 .contact-link:hover {
   background-color: #007BFF; /* Change background color on hover */
   color: #fff; /* Change text color to white on hover */
-}
-
-/* Section Styles */
-.section {
-  padding: 60px 0;
-  transition: background-color 0.3s ease;
-}
-
-#home {
-  background-color: #ffffff;
-}
-
-#introduction {
-  background-color: #f9f9f9;
-}
-
-#methodology {
-  background-color: #e9ecef;
-}
-
-#results {
-  background-color: #dee2e6;
-}
-
-#discussion {
-  background-color: #ced4da;
-}
-
-#research {
-  background-color: #adb5bd;
-}
-
-/* Footer */
-.footer {
-  background-color: #1e2a38;
-  color: white;
-  padding: 20px 0;
-}
-
-.footer .social-links a {
-  color: white;
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
-
-.footer .social-links a:hover {
-  color: #00acee;
-}
-
-/* Smooth Scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Additional Custom Styles */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.main-content {
-  padding: 60px 0;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh; /* Adjust hero section height for smaller screens */
-  }
-
-  .hero h1 {
-    font-size: 2rem; /* Adjust title size for smaller screens */
-  }
-
-  .contact-link {
-    font-size: 1rem;
-    padding: 8px;
-  }
 }
