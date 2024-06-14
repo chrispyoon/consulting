@@ -3,15 +3,15 @@ layout: default
 title: Home
 ---
 
-<!-- Home Section -->
-<section id="home" class="section">
-  <div class="container">
-    <h1>Home</h1>
-    <p>Welcome to the research on the conditional inclusion of North Korean defectors...</p>
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1>"Conditional Inclusion: Case for North Korean Defectors"</h1>
+    <a href="mailto:yoond@lafayette.edu" class="btn btn-custom">Contact</a>
   </div>
 </section>
 
-<!-- Introduction Section -->
+<!-- Main Content -->
 <section id="introduction" class="section">
   <div class="container">
     <h2>Introduction</h2>
@@ -19,7 +19,7 @@ title: Home
   </div>
 </section>
 
-<!-- Methodology Section -->
+<!-- Additional Sections -->
 <section id="methodology" class="section">
   <div class="container">
     <h2>Methodology</h2>
@@ -27,7 +27,6 @@ title: Home
   </div>
 </section>
 
-<!-- Results Section -->
 <section id="results" class="section">
   <div class="container">
     <h2>Results</h2>
@@ -35,7 +34,6 @@ title: Home
   </div>
 </section>
 
-<!-- Discussion Section -->
 <section id="discussion" class="section">
   <div class="container">
     <h2>Discussion</h2>
@@ -43,7 +41,6 @@ title: Home
   </div>
 </section>
 
-<!-- Research Paper Section -->
 <section id="research" class="section">
   <div class="container">
     <h2>Research Paper</h2>
