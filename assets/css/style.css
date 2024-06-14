@@ -17,11 +17,11 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/hero-bg.jpg') no-repeat center center; /* Replace with your image path */
+  background: url('/assets/images/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -40,7 +40,7 @@ a:hover {
 }
 
 .btn-custom {
-  background-color: #4db8ff; /* Light cyan color */
+  background-color: #4db8ff;
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -50,7 +50,7 @@ a:hover {
 }
 
 .btn-custom:hover {
-  background-color: #00acee; /* Slightly darker cyan */
+  background-color: #00acee;
 }
 
 /* Navigation */
@@ -65,49 +65,48 @@ a:hover {
 
 .navbar-light .navbar-nav .nav-link {
   color: #4db8ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #00acee;
 }
 
-/* Sections */
+.navbar-light .navbar-nav .nav-link.active {
+  background-color: #4db8ff;
+  color: white;
+  border-radius: 25px;
+  padding: 0.5em 1em;
+}
+
+/* Section Styles */
 .section {
   padding: 60px 0;
+  transition: background-color 0.3s ease;
 }
 
-.section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+#home {
+  background-color: #ffffff;
 }
 
-.section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
+#introduction {
+  background-color: #f9f9f9;
 }
 
-/* Horizontal Scrolling Section */
-.horizontal-section {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-}
-
-.horizontal-section .slide {
-  min-width: 100vw;
-  scroll-snap-align: start;
-  padding: 60px;
-  box-sizing: border-box;
-}
-
-.horizontal-section .slide:nth-child(even) {
-  background-color: #f8f9fa; /* Alternating background colors */
-}
-
-.horizontal-section .slide:nth-child(odd) {
+#methodology {
   background-color: #e9ecef;
+}
+
+#results {
+  background-color: #dee2e6;
+}
+
+#discussion {
+  background-color: #ced4da;
+}
+
+#research {
+  background-color: #adb5bd;
 }
 
 /* Footer */
@@ -166,5 +165,12 @@ html {
   .btn-custom {
     font-size: 0.9rem;
     padding: 8px 16px;
+  }
+
+  .navbar-light .navbar-nav .nav-link.active {
+    border-radius: 0; /* Remove rounded corners for active links on small screens */
+    background-color: #4db8ff;
+    color: white;
+    padding: 0.5em 1em;
   }
 }
