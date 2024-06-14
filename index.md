@@ -4,12 +4,6 @@ title: Home
 ---
 
 <!-- Hero Section -->
-<section id="hero" class="hero">
-  <div class="hero-content">
-    <h1>"Conditional Inclusion: Case for North Korean Defectors"</h1>
-    <a href="mailto:yoond@lafayette.edu" class="btn btn-custom">Contact</a>
-  </div>
-</section>
 
 <!-- Main Content -->
 <section id="introduction" class="section">
