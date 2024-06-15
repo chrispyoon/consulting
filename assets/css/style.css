@@ -33,21 +33,20 @@ a:hover {
 
 .hero-content {
   z-index: 2;
-  padding: 20px;
 }
 
 .hero-heading {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Base size for h1 */
   font-weight: 700;
   margin-bottom: 10px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
 .hero-subheading {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* 80% of the h1 size */
   font-weight: 500;
   margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
 .contact-link {
@@ -154,11 +153,11 @@ section#discussion {
 }
 
 section#limits {
-  background-color: #e9ecef !important; /* Very light blue for differentiation */
+  background-color: #e9ecef !important;
 }
 
 section#acknowledgements {
-  background-color: #f9f9f9 !important; /* Medium slate gray for better contrast */
+  background-color: #f9f9f9 !important;
 }
 
 /* Footer */
@@ -230,8 +229,8 @@ html {
     padding: 8px;
   }
 
-  .navbar .navbar-nav {
-    text-align: center;
+  .navbar {
+    display: none; /* Hide the navbar on mobile */
   }
 
   .section {
