@@ -65,10 +65,15 @@ title: Home
     <p>
       Despite the influence of empowering narratives, the significant role of non-empowerment themes suggests that societal acceptance remains conditional. This highlights the need for a societal framework that embraces defectors unconditionally, recognizing their inherent worth and contributions.
     </p>
-    <p><strong>Limitations and Future Study:</strong></p>
-    <p>
-      The study's reliance on blog posts and translation may not fully capture societal views. Future research will involve direct Korean text assessment using KoBERT and explore broader themes and non-linear relationships. Expanding the data sample and incorporating advanced NLP techniques will enhance the understanding of defectors' integration and societal acceptance.
-    </p>
+  </div>
+</section>
+
+<!-- Limits Section -->
+<section id="limits" class="section bg-light">
+  <div class="container">
+    <h2>Limitations and Future Study</h2>
+    <p>This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.</p>
+    <p>Future analyses will use KoBERT for direct Korean text assessment, improving accuracy. The thematic prediction model's low accuracy (less than 30%), discovered late in the research, suggests a need for a larger sample size—potentially over 15,000—to achieve better accuracy.</p>
   </div>
 </section>
 
