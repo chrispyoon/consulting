@@ -13,13 +13,13 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#hero">Defector Inclusion Research</a> <!-- Changed href to #hero -->
+      <a class="navbar-brand" href="#home">Defector Inclusion Research</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li> <!-- Changed href to #hero -->
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
           <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
           <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
@@ -29,54 +29,37 @@
       </div>
     </div>
   </nav>
-
   <!-- Hero Section -->
-  <section id="hero" class="hero"> <!-- Ensure the id is 'hero' -->
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1 class="hero-heading">Unveiling Exclusion by Machine Learning</h1>
       <h2 class="hero-subheading">The Case for North Korean Defectors</h2>
       <a href="mailto:yoond@lafayette.edu" class="contact-link mt-4 mb-2">Contact</a>
     </div>
   </section>
-
   <!-- Main Content -->
   <main class="content">
-    <section id="introduction" class="section">
-      <!-- Introduction Content -->
-    </section>
-    <section id="methodology" class="section">
-      <!-- Methodology Content -->
-    </section>
-    <section id="results" class="section">
-      <!-- Results Content -->
-    </section>
-    <section id="discussion" class="section">
-      <!-- Discussion Content -->
-    </section>
-    <section id="research" class="section">
-      <!-- Research Content -->
-    </section>
+    {{ content }}
   </main>
-
   <!-- Footer -->
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
       <p>&copy; 2024 Chris Dongjoon Yoon. All rights reserved.</p>
       <div class="social-links">
+        <a href="https://github.com/your-github" class="text-white mr-3"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your-twitter" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/in/your-linkedin" class="text-white"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/chrispyoon" class="text-white mr-3"><i class="fab fa-github"></i></a>
-        <a href="https://facebook.com/chrisdjyoon" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
         <a href="https://linkedin.com/in/chrisdyoon" class="text-white"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
-
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
   <!-- JavaScript for Smooth Scrolling and Hide Hero on Scroll -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -89,7 +72,6 @@
           });
         });
       });
-
       // Hide hero section on scroll
       window.addEventListener('scroll', function() {
         const hero = document.getElementById('hero');
