@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
 }
 
 a {
@@ -47,13 +48,6 @@ a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
-}
-
 /* Contact Link Style */
 .contact-link {
   font-size: 1.2rem;
@@ -61,6 +55,8 @@ a:hover {
   color: #ff6600; /* Orange color for the contact link */
   transition: color 0.3s ease;
   padding: 10px;
+  background: transparent; /* Remove background for a cleaner look */
+  border: none; /* Remove border */
 }
 
 .contact-link:hover {
@@ -99,10 +95,22 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-#home {
-  background-color: #ffffff;
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
 }
 
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Specific Backgrounds for Sections */
 #introduction {
   background-color: #f9f9f9;
 }
@@ -119,7 +127,7 @@ a:hover {
   background-color: #ced4da;
 }
 
-#research {
+#acknowledgements {
   background-color: #adb5bd;
 }
 
@@ -166,6 +174,12 @@ html {
   padding: 60px 0;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
@@ -174,6 +188,10 @@ html {
 
   .hero h1 {
     font-size: 2rem; /* Adjust title size for smaller screens */
+  }
+
+  .hero-subheading {
+    font-size: 1.8rem; /* Adjust subtitle size for smaller screens */
   }
 
   .contact-link {
