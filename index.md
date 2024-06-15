@@ -70,7 +70,7 @@ title: Home
 
 <!-- Limits Section -->
 <section id="limits" class="section bg-light">
-  <div class="container">
+  <div class="container">  
     <h2>Limitations and Future Study</h2>
     <p>This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.</p>
     <p>Future analyses will use KoBERT for direct Korean text assessment, improving accuracy. The thematic prediction model's low accuracy (less than 30%), discovered late in the research, suggests a need for a larger sample size—potentially over 15,000—to achieve better accuracy.</p>
