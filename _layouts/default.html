@@ -13,13 +13,13 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#home">Defector Inclusion Research</a>
+      <a class="navbar-brand" href="#hero">Defector Inclusion Research</a> <!-- Changed href to #hero -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li> <!-- Changed href to #hero -->
           <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
           <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
           <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
@@ -31,7 +31,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section id="hero" class="hero"> <!-- Ensure the id is 'hero' -->
     <div class="hero-content">
       <h1 class="hero-heading">Unveiling Exclusion by Machine Learning</h1>
       <h2 class="hero-subheading">The Case for North Korean Defectors</h2>
@@ -41,7 +41,21 @@
 
   <!-- Main Content -->
   <main class="content">
-    {{ content }}
+    <section id="introduction" class="section">
+      <!-- Introduction Content -->
+    </section>
+    <section id="methodology" class="section">
+      <!-- Methodology Content -->
+    </section>
+    <section id="results" class="section">
+      <!-- Results Content -->
+    </section>
+    <section id="discussion" class="section">
+      <!-- Discussion Content -->
+    </section>
+    <section id="research" class="section">
+      <!-- Research Content -->
+    </section>
   </main>
 
   <!-- Footer -->
@@ -50,6 +64,7 @@
       <p>&copy; 2024 Chris Dongjoon Yoon. All rights reserved.</p>
       <div class="social-links">
         <a href="https://github.com/chrispyoon" class="text-white mr-3"><i class="fab fa-github"></i></a>
+        <a href="https://facebook.com/chrisdjyoon" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
         <a href="https://linkedin.com/in/chrisdyoon" class="text-white"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
