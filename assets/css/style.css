@@ -28,27 +28,28 @@ a:hover {
   text-align: center;
   color: white;
   transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
+  padding: 0 15px;
 }
 
 .hero-content {
   z-index: 2;
+  padding: 20px;
 }
 
 .hero-heading {
-  font-size: 3rem; /* Base size for h1 */
+  font-size: 2.5rem; /* Base size for h1 */
   font-weight: 700;
   margin-bottom: 10px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
 .hero-subheading {
-  font-size: 2.4rem; /* 80% of the h1 size */
+  font-size: 1.8rem; /* 80% of the h1 size */
   font-weight: 500;
   margin-bottom: 20px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
 }
 
-/* Contact Link Style */
 .contact-link {
   font-size: 1.2rem;
   font-weight: 600;
@@ -213,18 +214,40 @@ html {
 @media (max-width: 768px) {
   .hero {
     height: 70vh; /* Adjust hero section height for smaller screens */
+    padding: 20px;
   }
 
-  .hero h1 {
+  .hero-heading {
     font-size: 2rem; /* Adjust title size for smaller screens */
   }
 
   .hero-subheading {
-    font-size: 1.8rem; /* Adjust subtitle size for smaller screens */
+    font-size: 1.5rem; /* Adjust subtitle size for smaller screens */
   }
 
   .contact-link {
     font-size: 1rem;
     padding: 8px;
+  }
+
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .section {
+    padding: 30px 0; /* Reduce padding for sections on smaller screens */
+  }
+
+  .section h2 {
+    font-size: 1.5rem; /* Adjust section heading size */
+  }
+
+  .section p {
+    font-size: 1rem; /* Adjust section paragraph size */
+    line-height: 1.4;
+  }
+
+  .footer {
+    padding: 15px 0; /* Adjust footer padding */
   }
 }
