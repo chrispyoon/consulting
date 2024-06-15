@@ -123,9 +123,16 @@ a:hover {
 
 .figure-container img {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.figure-container figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 /* Specific Backgrounds for Sections */
@@ -193,7 +200,7 @@ html {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 15px;
 }
