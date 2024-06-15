@@ -27,9 +27,6 @@ title: Home
     <p>
       The SA used the VADER library to capture sentiment trends. The TA employed advanced NLP techniques and machine learning models such as Logistic Regression, Support Vector Machines (SVM), and Latent Dirichlet Allocation (LDA) to classify the posts into political, empowering, and discriminating themes.
     </p>
-    <p>
-      <img src="/defectorinclusion/assets/images/methodology_image.jpg" alt="Methodology Image" class="section-image">
-    </p>
   </div>
 </section>
 
