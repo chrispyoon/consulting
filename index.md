@@ -17,6 +17,7 @@ title: Home
 </section>
 
 <!-- Methodology Section -->
+<!-- Methodology Section -->
 <section id="methodology" class="section bg-gray">
   <div class="container">
     <h2>Methodology</h2>
@@ -27,17 +28,7 @@ title: Home
       The SA used the VADER library to capture sentiment trends. The TA employed advanced NLP techniques and machine learning models such as Logistic Regression, Support Vector Machines (SVM), and Latent Dirichlet Allocation (LDA) to classify the posts into political, empowering, and discriminating themes.
     </p>
     <p>
-      Hypotheses for the SA:
-      <ul>
-        <li>S1: Growing positive sentiment correlates with higher life satisfaction.</li>
-        <li>S2: Growing neutral sentiment has a limited impact on life satisfaction.</li>
-        <li>S3: Growing negative sentiment correlates with lower life satisfaction.</li>
-      </ul>
-      Hypotheses for the TA:
-      <ul>
-        <li>T1: Empowerment theme explaining more than 50% of positive sentiment suggests weak conditional inclusion.</li>
-        <li>T2: Non-empowerment themes explaining more than 50% of positive sentiment suggests significant conditional inclusion.</li>
-      </ul>
+      <img src="/defectorinclusion/assets/images/methodology_image.jpg" alt="Methodology Image" class="section-image">
     </p>
   </div>
 </section>
