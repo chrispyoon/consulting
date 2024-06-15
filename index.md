@@ -3,41 +3,89 @@ layout: default
 title: Home
 ---
 
-<!-- Hero Section -->
-
-<!-- Main Content -->
-<section id="introduction" class="section">
+<!-- Introduction Section -->
+<section id="introduction" class="section bg-light">
   <div class="container">
     <h2>Introduction</h2>
-    <p>The introduction content goes here...</p>
+    <p>
+      Under the South Korean Constitution, North Korean defectors are granted legal status as South Korean nationals. Despite their legal status, many face significant challenges, including economic struggles, social stigma, and difficulties in cultural adaptation. This study explores whether defectors are genuinely embraced or if their acceptance is conditional on fulfilling certain favorable expectations, such as embodying positive stereotypes.
+    </p>
+    <p>
+      The primary objective of this research is to examine the hypothesis that societal acceptance of North Korean defectors in South Korea is conditional. It investigates whether narratives that are positive and empowering enhance societal acceptance. By analyzing these dynamics, the study aims to contribute to a broader discussion on migration, integration, and human rights, shedding light on the challenges and opportunities faced by North Korean defectors.
+    </p>
   </div>
 </section>
 
-<!-- Additional Sections -->
-<section id="methodology" class="section">
+<!-- Methodology Section -->
+<section id="methodology" class="section bg-gray">
   <div class="container">
     <h2>Methodology</h2>
-    <p>The methodology content goes here...</p>
+    <p>
+      This study collected data from blog posts in Korean for sentiment analysis (SA) and thematic analysis (TA). The SA focused on posts that mentioned "North Korean Defector" (탈북민/t'albungmin), collected using the Naver API. The data was translated into English for analysis.
+    </p>
+    <p>
+      The SA used the VADER library to capture sentiment trends. The TA employed advanced NLP techniques and machine learning models such as Logistic Regression, Support Vector Machines (SVM), and Latent Dirichlet Allocation (LDA) to classify the posts into political, empowering, and discriminating themes.
+    </p>
+    <p>
+      Hypotheses for the SA:
+      <ul>
+        <li>S1: Growing positive sentiment correlates with higher life satisfaction.</li>
+        <li>S2: Growing neutral sentiment has a limited impact on life satisfaction.</li>
+        <li>S3: Growing negative sentiment correlates with lower life satisfaction.</li>
+      </ul>
+      Hypotheses for the TA:
+      <ul>
+        <li>T1: Empowerment theme explaining more than 50% of positive sentiment suggests weak conditional inclusion.</li>
+        <li>T2: Non-empowerment themes explaining more than 50% of positive sentiment suggests significant conditional inclusion.</li>
+      </ul>
+    </p>
   </div>
 </section>
 
-<section id="results" class="section">
+<!-- Results Section -->
+<section id="results" class="section bg-light">
   <div class="container">
     <h2>Results</h2>
-    <p>The results content goes here...</p>
+    <p>
+      The sentiment analysis results show varying percentages of positive sentiment each year, with a noticeable correlation between positive sentiment and life satisfaction among defectors.
+    </p>
+    <figure>
+      <img src="/defectorinclusion/assets/images/figure1.png" alt="Figure 1: Sentiment Analysis Results">
+      <figcaption>Figure 1: Sentiment Analysis Results</figcaption>
+    </figure>
+    <p>
+      The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment. Non-empowerment themes also play a significant role, indicating the presence of conditional inclusion.
+    </p>
+    <figure>
+      <img src="/defectorinclusion/assets/images/figure2.png" alt="Figure 2: Thematic Analysis Results">
+      <figcaption>Figure 2: Thematic Analysis Results</figcaption>
+    </figure>
   </div>
 </section>
 
-<section id="discussion" class="section">
+<!-- Discussion Section -->
+<section id="discussion" class="section bg-gray">
   <div class="container">
     <h2>Discussion</h2>
-    <p>The discussion content goes here...</p>
+    <p>
+      This study highlights the correlation between public sentiment and the life satisfaction of North Korean defectors, emphasizing the role of positive and empowering narratives. However, it also underscores the challenges of conditional inclusion, where defectors must conform to societal expectations to gain acceptance.
+    </p>
+    <p>
+      Despite the influence of empowering narratives, the significant role of non-empowerment themes suggests that societal acceptance remains conditional. This highlights the need for a societal framework that embraces defectors unconditionally, recognizing their inherent worth and contributions.
+    </p>
+    <p><strong>Limitations and Future Study:</strong></p>
+    <p>
+      The study's reliance on blog posts and translation may not fully capture societal views. Future research will involve direct Korean text assessment using KoBERT and explore broader themes and non-linear relationships. Expanding the data sample and incorporating advanced NLP techniques will enhance the understanding of defectors' integration and societal acceptance.
+    </p>
   </div>
 </section>
 
-<section id="acknowledgements" class="section">
+<!-- Acknowledgements Section -->
+<section id="acknowledgements" class="section bg-light">
   <div class="container">
     <h2>Acknowledgements</h2>
-    <p>I want to express my gratitude to several individuals who greatly supported my research journey. First, thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, for his persistent feedback. Lastly, I am grateful for the mentorship provided by Associate Professor Seo-Hyun Park of the Government and Law Department and the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.</p>
+    <p>
+      I want to express my gratitude to several individuals who greatly supported my research journey. First, thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, for his persistent feedback. Lastly, I am grateful for the mentorship provided by Associate Professor Seo-Hyun Park of the Government and Law Department and the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.
+    </p>
   </div>
 </section>
