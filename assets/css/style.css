@@ -153,11 +153,11 @@ a:hover {
 }
 
 #limits {
-  background-color: #f0f4f7; /* A light background for differentiation */
+  background-color: #f0f4f7; /* Very light blue for differentiation */
 }
 
 #acknowledgements {
-  background-color: #adb5bd;
+  background-color: #b0bec5; /* Medium slate gray for better contrast */
 }
 
 /* Footer */
