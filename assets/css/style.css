@@ -22,12 +22,12 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/defectorinclusion/assets/images/blackwhitebgimg.gif') no-repeat center center; /* Set your GIF background */
+  background: url('/defectorinclusion/assets/images/blackwhitebgimg.gif') no-repeat center center;
   background-size: cover;
   position: relative;
   text-align: center;
   color: white;
-  transition: opacity 0.5s ease-out; /* Smooth transition for disappearing effect */
+  transition: opacity 0.5s ease-out;
   padding: 0 15px;
 }
 
@@ -37,31 +37,31 @@ a:hover {
 }
 
 .hero-heading {
-  font-size: 2.5rem; /* Base size for h1 */
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subheading {
-  font-size: 1.8rem; /* 80% of the h1 size */
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-link {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ff6600; /* Orange color for the contact link */
+  color: #ff6600;
   transition: color 0.3s ease;
   padding: 10px;
-  background: transparent; /* Remove background for a cleaner look */
-  border: none; /* Remove border */
+  background: transparent;
+  border: none;
 }
 
 .contact-link:hover {
-  color: #e65c00; /* Darker orange on hover */
+  color: #e65c00;
 }
 
 /* Navigation */
@@ -213,16 +213,16 @@ html {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
-    height: 70vh; /* Adjust hero section height for smaller screens */
+    height: 100vh; /* Ensure hero covers full viewport height on smaller screens */
     padding: 20px;
   }
 
   .hero-heading {
-    font-size: 2rem; /* Adjust title size for smaller screens */
+    font-size: 1.8rem; /* Adjust title size for smaller screens */
   }
 
   .hero-subheading {
-    font-size: 1.5rem; /* Adjust subtitle size for smaller screens */
+    font-size: 1.2rem; /* Adjust subtitle size for smaller screens */
   }
 
   .contact-link {
