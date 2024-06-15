@@ -137,27 +137,27 @@ a:hover {
 
 /* Specific Backgrounds for Sections */
 section#introduction {
-  background-color: #f9f9f9 !important;
-}
-
-section#methodology {
   background-color: #e9ecef !important;
 }
 
+section#methodology {
+  background-color: #f9f9f9 !important;
+}
+
 section#results {
-  background-color: #dee2e6 !important;
+  background-color: #e9ecef !important;
 }
 
 section#discussion {
-  background-color: #ced4da !important;
+  background-color: #f9f9f9 !important;
 }
 
 section#limits {
-  background-color: #f0f4f7 !important; /* Very light blue for differentiation */
+  background-color: #e9ecef !important; /* Very light blue for differentiation */
 }
 
 section#acknowledgements {
-  background-color: #b0bec5 !important; /* Medium slate gray for better contrast */
+  background-color: #f9f9f9 !important; /* Medium slate gray for better contrast */
 }
 
 /* Footer */
