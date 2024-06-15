@@ -233,6 +233,10 @@ html {
     display: none; /* Hide the navbar on mobile */
   }
 
+  .navbar-toggler {
+    display: none; /* Hide the hamburger menu button on mobile */
+  }
+
   .section {
     padding: 30px 0; /* Reduce padding for sections on smaller screens */
   }
