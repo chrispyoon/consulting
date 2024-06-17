@@ -464,36 +464,43 @@ html {
   /* Results Section Adjustments */
   .results-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack items vertically by default */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .results-row {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
-    padding: 0;
+    width: 100%; /* Full width of the container */
+    margin: 20px 0; /* Margin between rows */
+  }
+  
+  .results-row:nth-child(odd) .results-left,
+  .results-row:nth-child(even) .results-right {
+    order: 1; /* Ensure left and right are positioned correctly for each row */
   }
   
   .results-half {
-    width: 50%; /* Each half takes up 50% of the container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add some padding for better spacing */
+    width: 48%; /* Each half takes up almost half the row width */
+    text-align: center;
   }
   
   .results-half p {
-    width: 80%; /* Constrain text width for better readability */
-    text-align: justify; /* Justify the text */
+    margin: 0 auto;
+    width: 100%; /* Text takes full width of the container */
+    text-align: justify; /* Align text to both left and right edges */
   }
   
   .results-half .figure-container {
     margin-top: 20px;
-    width: 80%; /* Ensure figure container fits within the half */
+    width: 100%; /* Ensure figure container fits within the half */
   }
   
   .results-half .figure-container img {
     width: 100%; /* Image takes full width of the container */
-    max-width: 400px; /* Set a reasonable max-width for images */
+    max-width: 100%; /* Ensure images do not exceed container width */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -506,13 +513,14 @@ html {
   
   /* Responsive Design Adjustments */
   @media (max-width: 768px) {
-    .results-container {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+    .results-row {
+      flex-direction: column;
+      align-items: center; /* Center items vertically on smaller screens */
     }
   
     .results-half {
-      width: 100%; /* Each half takes full width on smaller screens */
-      padding: 20px 0; /* Reduce padding for better fit */
+      width: 90%; /* Make each section take most of the width on smaller screens */
+      margin: 20px 0; /* Add margin for vertical spacing */
     }
   }
 
