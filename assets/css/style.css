@@ -496,5 +496,24 @@ html {
       margin: 20px 0;
     }
   }
-
+  
+  /* Figures */
+  .figure-container {
+    text-align: center;
+  }
+  
+  .figure-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .figure-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
 }
