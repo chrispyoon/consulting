@@ -63,7 +63,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  
+    
   <!-- JavaScript for Smooth Scrolling, Hide Sections on Scroll, and Slide Transition -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -81,12 +81,12 @@
       function handleFadeOut(sectionId) {
         const section = document.getElementById(sectionId);
         const sectionHeight = section.clientHeight;
-        const fadeOutPoint = section.offsetTop + (sectionHeight * 1.0); // Set to 100% of the section height
+        const fadeOutPoint = section.offsetTop + sectionHeight; // Fade out when scrolled past the entire section
   
         window.addEventListener('scroll', function() {
           const scrollPosition = window.scrollY + window.innerHeight;
   
-          // Start fading out when scrolled past 80% of the section's height
+          // Start fading out only when completely scrolled past the section's height
           if (scrollPosition > fadeOutPoint) {
             section.style.opacity = '0';
             section.style.transition = 'opacity 0.5s ease-out';
@@ -102,7 +102,8 @@
       handleFadeOut('results');
       handleFadeOut('discussion');
       handleFadeOut('limits');
-      
+      handleFadeOut('acknowledgements');
+  
       // Function to handle the slide transition
       function handleSlideTransition() {
         const resultsSection = document.getElementById('results');
