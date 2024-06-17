@@ -31,7 +31,7 @@ title: Home
 
 <!-- Results Section -->
 <section id="results" class="section bg-light">
-  <div class="container">
+  <div class="container results-container">
     <h2>Results</h2>
     <div class="results-left">
       <p>
