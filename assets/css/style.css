@@ -491,8 +491,18 @@ html {
     margin: 0 auto; /* Center the figures within their containers */
   }
   
+  /* Ensure container is not wider than the section */
+  .results-container .figure-container img {
+    width: 100%;
+    max-width: 100%; /* Ensure images do not exceed container width */
+  }
+  
   /* Responsive Design Adjustments */
   @media (max-width: 768px) {
+    .results-container {
+      flex-direction: column;
+    }
+  
     .results-left,
     .results-right {
       width: 100%; /* Make each section full width on smaller screens */
@@ -500,5 +510,4 @@ html {
     }
   }
   
-
 }
