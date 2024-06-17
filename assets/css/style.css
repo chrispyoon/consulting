@@ -461,42 +461,44 @@ html {
     left: 0; /* Slide into view */
   }
   
+  /* General Styles for the Results Section */
+  .results-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  }
+  
   .results-left,
   .results-right {
-    width: 48%; /* Adjust to ensure there's space between columns */
-    margin: 0;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center; /* Center align content within each column */
+    width: 45%; /* Ensure there's space between the two columns */
+    text-align: center;
+    margin: 10px 0; /* Add margin for spacing */
   }
   
-  .results-left {
-    float: left;
-    margin-right: 2%; /* Add space between left and right */
+  .results-left p,
+  .results-right p {
+    text-align: left; /* Align text to the left for better readability */
   }
   
-  .results-right {
-    float: right;
-    margin-left: 2%; /* Add space between left and right */
+  .results-left .figure-container,
+  .results-right .figure-container {
+    margin-top: 10px;
   }
   
-  /* Make sure figures don't overflow their containers */
-  .figure-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .results-left .figure-container figure,
+  .results-right .figure-container figure {
+    margin: 0 auto; /* Center the figures within their containers */
   }
   
-  /* Adjustments for mobile view */
+  /* Responsive Design Adjustments */
   @media (max-width: 768px) {
     .results-left,
     .results-right {
-      width: 100%;
-      float: none;
-      margin: 0 0 20px 0; /* Space between sections */
-      text-align: center; /* Ensure center alignment on small screens */
+      width: 100%; /* Make each section full width on smaller screens */
+      margin: 20px 0; /* Add margin for vertical spacing */
     }
   }
+  
 
 }
