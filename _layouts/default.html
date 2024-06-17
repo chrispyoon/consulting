@@ -12,24 +12,24 @@
 <body style="font-family: 'Poppins', sans-serif;">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="#home">Defector Inclusion Research</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
-        <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
-        <li class="nav-item"><a class="nav-link" href="#discussion">Discussion</a></li>
-        <li class="nav-item"><a class="nav-link" href="#limits">Limits</a></li>
-        <li class="nav-item"><a class="nav-link" href="#acknowledgements">Acknowledgements</a></li>
-      </ul>
+    <div class="container">
+      <a class="navbar-brand" href="#home">Defector Inclusion Research</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
+          <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+          <li class="nav-item"><a class="nav-link" href="#discussion">Discussion</a></li>
+          <li class="nav-item"><a class="nav-link" href="#limits">Limits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acknowledgements">Acknowledgements</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
@@ -39,10 +39,12 @@
       <a href="mailto:yoond@lafayette.edu" class="contact-link mt-4 mb-2">Contact</a>
     </div>
   </section>
+  
   <!-- Main Content -->
   <main class="content">
     {{ content }}
   </main>
+  
   <!-- Footer -->
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
@@ -54,12 +56,14 @@
       </div>
     </div>
   </footer>
+
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
   <!-- JavaScript for Smooth Scrolling and Hide Sections on Scroll -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -72,16 +76,17 @@
           });
         });
       });
-  
+
       // Function to handle the fade-out effect for sections
       function handleFadeOut(sectionId) {
         const section = document.getElementById(sectionId);
         const sectionHeight = section.clientHeight;
-        const fadeOutPoint = section.offsetTop + sectionHeight / 2;
-  
+        const fadeOutPoint = section.offsetTop + (sectionHeight / 2);
+
         window.addEventListener('scroll', function() {
           const scrollPosition = window.scrollY + window.innerHeight;
-  
+
+          // Start fading out after scrolling past the midpoint of the section
           if (scrollPosition > fadeOutPoint) {
             section.style.opacity = '0';
             section.style.transition = 'opacity 0.5s ease-out';
@@ -90,7 +95,7 @@
           }
         });
       }
-  
+
       // Apply fade-out effect to each section
       handleFadeOut('hero');
       handleFadeOut('introduction');
