@@ -450,7 +450,4 @@ html {
   .slide-page.active {
     left: 0; /* Slide into view */
   }
-  
-  /* Other existing styles... */
-
 }
