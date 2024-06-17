@@ -44,39 +44,7 @@
   <main class="content">
     {{ content }}
   </main>
-
-  <!-- Slide Page for Additional Sections -->
-<div id="slide-page">
-  <div id="discussion" class="section">
-    <div class="container">
-      <h2>Discussion</h2>
-      <p>
-        This study underscores the challenges of conditional inclusion, where defectors must conform to societal expectations to gain acceptance.
-      </p>
-      <p>
-        Despite the influence of empowering narratives, the significant role of non-empowerment themes suggests that societal acceptance remains conditional. This highlights the need for a societal framework that embraces defectors unconditionally, recognizing their inherent worth and contributions.
-      </p>
-    </div>
-  </div>
-
-  <div id="limits" class="section">
-    <div class="container">
-      <h2>Limitations and Future Study</h2>
-      <p>This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.</p>
-      <p>Future analyses will use KoBERT for direct Korean text assessment, improving accuracy. The thematic prediction model's low accuracy (less than 30%), discovered late in the research, suggests a need for a larger sample size—potentially over 15,000—to achieve better accuracy.</p>
-    </div>
-  </div>
-
-  <div id="acknowledgements" class="section">
-    <div class="container">
-      <h2>Acknowledgements</h2>
-      <p>
-        I want to express my gratitude to several individuals who greatly supported my research journey. First, thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, and Tanushree Sow Mondal, DHSS'2024, for their persistent feedback. Lastly, I am grateful for the mentorship provided by Professor Seo-Hyun Park of the Government and Law Department and the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.
-      </p>
-    </div>
-  </div>
-</div>
-
+  
   <!-- Footer -->
   <footer class="footer bg-dark text-white py-4">
     <div class="container text-center">
@@ -96,7 +64,7 @@
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
-  <!-- JavaScript for Smooth Scrolling, Hide Sections on Scroll, and Slide Transition -->
+  <!-- JavaScript for Smooth Scrolling and Hide Sections on Scroll -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Add smooth scrolling to all internal links
@@ -108,16 +76,16 @@
           });
         });
       });
-  
+
       // Function to handle the fade-out effect for sections
       function handleFadeOut(sectionId) {
         const section = document.getElementById(sectionId);
         const sectionHeight = section.clientHeight;
         const fadeOutPoint = section.offsetTop + sectionHeight; // Fade out when scrolled past the entire section
-  
+
         window.addEventListener('scroll', function() {
           const scrollPosition = window.scrollY + window.innerHeight;
-  
+
           // Start fading out only when completely scrolled past the section's height
           if (scrollPosition > fadeOutPoint) {
             section.style.opacity = '0';
@@ -127,14 +95,13 @@
           }
         });
       }
-  
+
       // Apply fade-out effect to each section
       handleFadeOut('introduction');
       handleFadeOut('methodology');
       handleFadeOut('results');
       handleFadeOut('discussion');
       handleFadeOut('limits');
-
     });
   </script>
 </body>
