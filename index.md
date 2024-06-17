@@ -32,8 +32,8 @@ title: Home
 <!-- Results Section -->
 <section id="results" class="section bg-light">
   <div class="container results-container">
-    <h2>Results</h2>
-    <div class="results-left">
+    <div class="results-half">
+      <h2>Results</h2>
       <p>
         The sentiment analysis results show varying percentages of positive sentiment each year, with a noticeable correlation between positive sentiment and life satisfaction among defectors.
       </p>
@@ -44,7 +44,7 @@ title: Home
         </figure>
       </div>
     </div>
-    <div class="results-right">
+    <div class="results-half">
       <p>
         The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment. Non-empowerment themes also play a significant role, indicating the presence of conditional inclusion.
       </p>
