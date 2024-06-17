@@ -145,6 +145,7 @@ section#introduction {
   background-size: cover;
   color: white; /* Ensure text is readable over the background */
   position: relative;
+  text-align: center;
 }
 
 section#introduction .intro-content {
@@ -163,13 +164,13 @@ section#introduction::before {
   z-index: 1;
 }
 
-/* Adjustments for Container */
 section#introduction .container {
   position: relative;
   z-index: 2;
   padding: 60px 15px; /* Ensure padding for readability */
 }
 
+/* Adjustments for Other Sections */
 section#methodology {
   background-color: #f9f9f9 !important;
 }
