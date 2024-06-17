@@ -268,7 +268,7 @@ section#discussion .container {
 }
 
 section#limits {
-  background: url('/defectorinclusion/assets/images/limits.jpg') no-repeat center center;
+  background: url('/defectorinclusion/assets/images/limits.gif') no-repeat center center;
   background-size: cover;
   color: white; /* Ensure text is readable over the background */
   position: relative;
