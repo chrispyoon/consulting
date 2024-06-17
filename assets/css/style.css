@@ -466,16 +466,71 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    flex-wrap: wrap;
+    text-align: left; /* Ensure text is aligned left */
   }
   
   .results-left,
   .results-right {
-    width: 45%; /* Ensure there's space between the two columns */
-    text-align: center;
-    margin: 10px 0; /* Add margin for spacing */
+    width: 45%; /* Adjust to fit content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
   }
   
+  .results-left {
+    text-align: left; /* Align text to the left for better readability */
+  }
+  
+  .results-right {
+    text-align: right; /* Align text to the right for better readability */
+  }
+  
+  .results-left p,
+  .results-right p {
+    margin-bottom: 10px; /* Add margin for spacing between elements */
+  }
+  
+  .figure-container {
+    display: flex;
+    justify-content: center; /* Center the figure within its column */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .figure-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .figure-container figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .results-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .results-left,
+    .results-right {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .results-left p,
+    .results-right p {
+      text-align: center;
+    }
+  }
+  
+    
   .results-left p,
   .results-right p {
     text-align: left; /* Align text to the left for better readability */
