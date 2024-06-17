@@ -60,7 +60,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <!-- JavaScript for Smooth Scrolling and Hide Hero on Scroll -->
+  <!-- JavaScript for Smooth Scrolling and Hide Sections on Scroll -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Add smooth scrolling to all internal links
@@ -72,17 +72,32 @@
           });
         });
       });
-      // Hide hero section on scroll
-      window.addEventListener('scroll', function() {
-        const hero = document.getElementById('hero');
-        console.log('Scroll position:', window.scrollY); // Log scroll position for debugging
-        if (window.scrollY > 100) {
-          hero.style.opacity = '0';
-          hero.style.transition = 'opacity 0.5s ease-out';
-        } else {
-          hero.style.opacity = '1';
-        }
-      });
+  
+      // Function to handle the fade-out effect for sections
+      function handleFadeOut(sectionId) {
+        const section = document.getElementById(sectionId);
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        window.addEventListener('scroll', function() {
+          const scrollPosition = window.scrollY;
+          if (scrollPosition > sectionTop - sectionHeight / 2) {
+            section.style.opacity = '0';
+            section.style.transition = 'opacity 0.5s ease-out';
+          } else {
+            section.style.opacity = '1';
+          }
+        });
+      }
+  
+      // Apply fade-out effect to each section
+      handleFadeOut('hero');
+      handleFadeOut('introduction');
+      handleFadeOut('methodology');
+      handleFadeOut('results');
+      handleFadeOut('discussion');
+      handleFadeOut('limits');
+      handleFadeOut('acknowledgements');
     });
   </script>
 </body>
