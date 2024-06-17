@@ -81,7 +81,7 @@ title: Home
 </section>
 
 <!-- Acknowledgements Section -->
-<section id="acknowledgements" class="section bg-light">
+<section id="acknowledgements" class="section bg-black">
   <div class="container">
     <h2>Acknowledgements</h2>
     <p>
