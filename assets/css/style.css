@@ -102,8 +102,9 @@ a:hover {
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #fff; /* Set section heading to white for better visibility */
   text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
 }
 
 .section p {
@@ -112,6 +113,7 @@ a:hover {
   text-align: justify;
   margin: 0 auto;
   max-width: 800px;
+  color: #fff; /* Set text to white for better visibility */
 }
 
 /* Hypotheses and Figures */
