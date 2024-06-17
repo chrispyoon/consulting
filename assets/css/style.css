@@ -141,7 +141,33 @@ a:hover {
 
 /* Specific Backgrounds for Sections */
 section#introduction {
-  background-color: #e9ecef !important;
+  background: url('/defectorinclusion/assets/images/Introduction%20Image.webp') no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable over the background */
+  position: relative;
+}
+
+section#introduction .intro-content {
+  z-index: 2;
+  text-align: center; /* Center the text content */
+}
+
+section#introduction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+/* Adjustments for Container */
+section#introduction .container {
+  position: relative;
+  z-index: 2;
+  padding: 60px 15px; /* Ensure padding for readability */
 }
 
 section#methodology {
