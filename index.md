@@ -17,7 +17,6 @@ title: Home
 </section>
 
 <!-- Methodology Section -->
-<!-- Methodology Section -->
 <section id="methodology" class="section bg-gray">
   <div class="container">
     <h2>Methodology</h2>
@@ -60,7 +59,7 @@ title: Home
   <div class="container">
     <h2>Discussion</h2>
     <p>
-      This study highlights the correlation between public sentiment and the life satisfaction of North Korean defectors, emphasizing the role of positive and empowering narratives. However, it also underscores the challenges of conditional inclusion, where defectors must conform to societal expectations to gain acceptance.
+      This study underscores the challenges of conditional inclusion, where defectors must conform to societal expectations to gain acceptance.
     </p>
     <p>
       Despite the influence of empowering narratives, the significant role of non-empowerment themes suggests that societal acceptance remains conditional. This highlights the need for a societal framework that embraces defectors unconditionally, recognizing their inherent worth and contributions.
