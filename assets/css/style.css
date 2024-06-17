@@ -460,4 +460,43 @@ html {
   #slide-page.active {
     left: 0; /* Slide into view */
   }
+  
+  .results-left,
+  .results-right {
+    width: 48%; /* Adjust to ensure there's space between columns */
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; /* Center align content within each column */
+  }
+  
+  .results-left {
+    float: left;
+    margin-right: 2%; /* Add space between left and right */
+  }
+  
+  .results-right {
+    float: right;
+    margin-left: 2%; /* Add space between left and right */
+  }
+  
+  /* Make sure figures don't overflow their containers */
+  .figure-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Adjustments for mobile view */
+  @media (max-width: 768px) {
+    .results-left,
+    .results-right {
+      width: 100%;
+      float: none;
+      margin: 0 0 20px 0; /* Space between sections */
+      text-align: center; /* Ensure center alignment on small screens */
+    }
+  }
+
 }
