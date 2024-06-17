@@ -64,7 +64,7 @@
   <!-- Font Awesome for social icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   
-  <!-- JavaScript for Smooth Scrolling and Hide Sections on Scroll -->
+  <!-- JavaScript for Smooth Scrolling, Hide Sections on Scroll, and Slide Transition -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Add smooth scrolling to all internal links
@@ -76,16 +76,16 @@
           });
         });
       });
-
+  
       // Function to handle the fade-out effect for sections
       function handleFadeOut(sectionId) {
         const section = document.getElementById(sectionId);
         const sectionHeight = section.clientHeight;
-        const fadeOutPoint = section.offsetTop + (sectionHeight * 1.0); // Set to 100% of the section height
-
+        const fadeOutPoint = section.offsetTop + (sectionHeight * 0.8); // Set to 80% of the section height
+  
         window.addEventListener('scroll', function() {
           const scrollPosition = window.scrollY + window.innerHeight;
-
+  
           // Start fading out when scrolled past 80% of the section's height
           if (scrollPosition > fadeOutPoint) {
             section.style.opacity = '0';
@@ -95,14 +95,34 @@
           }
         });
       }
-
+  
       // Apply fade-out effect to each section
-      handleFadeOut('hero');
       handleFadeOut('introduction');
       handleFadeOut('methodology');
       handleFadeOut('results');
       handleFadeOut('discussion');
       handleFadeOut('limits');
+      handleFadeOut('acknowledgements');
+  
+      // Function to handle the slide transition
+      function handleSlideTransition() {
+        const resultsSection = document.getElementById('results');
+        const slidePage = document.getElementById('slide-page');
+        const slidePoint = resultsSection.offsetTop + resultsSection.clientHeight;
+  
+        window.addEventListener('scroll', function() {
+          const scrollPosition = window.scrollY + window.innerHeight;
+  
+          // Trigger slide when scrolled past the results section
+          if (scrollPosition > slidePoint) {
+            slidePage.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
+          }
+        });
+      }
+  
+      // Apply slide transition effect
+      handleSlideTransition();
     });
   </script>
 </body>
