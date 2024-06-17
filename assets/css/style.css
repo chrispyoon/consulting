@@ -464,48 +464,47 @@ html {
   /* Results Section Adjustments */
   .results-container {
     display: flex;
-    flex-direction: column; /* Stack items vertically by default */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
   .results-row {
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping to handle smaller screens */
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full width of the container */
-    margin: 20px 0; /* Margin between rows */
-  }
-  
-  .results-row:nth-child(odd) .results-left,
-  .results-row:nth-child(even) .results-right {
-    order: 1; /* Ensure left and right are positioned correctly for each row */
+    width: 100%;
+    margin: 20px 0; /* Add margin for spacing between rows */
   }
   
   .results-half {
-    width: 48%; /* Each half takes up almost half the row width */
+    flex: 0 1 48%; /* Each half takes up about 48% of the row */
     text-align: center;
+    margin: 10px 0; /* Add margin for spacing */
   }
   
   .results-half p {
     margin: 0 auto;
-    width: 100%; /* Text takes full width of the container */
-    text-align: justify; /* Align text to both left and right edges */
+    width: 100%;
+    text-align: justify; /* Align text for better readability */
   }
   
   .results-half .figure-container {
-    margin-top: 20px;
-    width: 100%; /* Ensure figure container fits within the half */
+    margin-top: 10px;
+    width: 100%;
   }
   
   .results-half .figure-container img {
-    width: 100%; /* Image takes full width of the container */
+    width: 100%;
     max-width: 100%; /* Ensure images do not exceed container width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .results-half .figure-container figcaption {
+    text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
     color: #555;
@@ -515,12 +514,11 @@ html {
   @media (max-width: 768px) {
     .results-row {
       flex-direction: column;
-      align-items: center; /* Center items vertically on smaller screens */
     }
   
     .results-half {
-      width: 90%; /* Make each section take most of the width on smaller screens */
-      margin: 20px 0; /* Add margin for vertical spacing */
+      width: 100%; /* Make each half full width on smaller screens */
+      margin: 20px 0;
     }
   }
 
