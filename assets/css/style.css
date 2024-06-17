@@ -437,16 +437,42 @@ html {
   }
   
   /* Results Section Adjustments */
-  .results-container {
+  section#results {
+    height: 200vh; /* Double the height */
+    background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
+    background-size: cover;
+    color: white; /* Ensure text is readable over the background */
+    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    padding: 60px 15px; /* Adjust padding for better readability */
+  }
+  
+  section#results::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  section#results .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px; /* Adjust the max-width to suit your needs */
+    margin: 0 auto;
+    padding: 60px 15px;
+    color: white; /* Set container text color to white */
   }
   
   .results-row {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping to handle smaller screens */
+    flex-wrap: nowrap; /* Ensure items don't wrap */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -495,30 +521,6 @@ html {
       width: 100%; /* Make each half full width on smaller screens */
       margin: 20px 0;
     }
-  }
-  
-  /* Figures */
-  .figure-container {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .figure-container {
-    text-align: center;
-  }
-  
-  .figure-container img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .figure-container figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #555;
   }
   
 }
