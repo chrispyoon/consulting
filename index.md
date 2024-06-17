@@ -5,7 +5,7 @@ title: Home
 
 <!-- Introduction Section -->
 <section id="introduction" class="section bg-light">
-  <div class="intro-content">
+  <div class="container intro-content">
     <h2>Introduction</h2>
     <p>
       Under the South Korean Constitution, North Korean defectors are granted legal status as South Korean nationals. Despite their legal status, many face significant challenges, including economic struggles, social stigma, and difficulties in cultural adaptation. This study explores whether defectors are genuinely embraced or if their acceptance is conditional on fulfilling certain favorable expectations, such as embodying positive stereotypes.
