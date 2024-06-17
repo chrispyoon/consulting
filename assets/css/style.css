@@ -273,7 +273,10 @@ html {
 
   .section {
     padding: 30px 15px; /* Reduce padding for sections on smaller screens */
-    height: auto; /* Allow sections to adjust height automatically */
+    height: 100vh; /* Full viewport height for sections on smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .section h2 {
