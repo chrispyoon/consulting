@@ -170,6 +170,7 @@ section#introduction .container {
   position: relative;
   z-index: 2;
   padding: 60px 15px; /* Ensure padding for readability */
+  color: white; /* Set container text color to white */
 }
 
 /* Adjustments for Other Sections */
