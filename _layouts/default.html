@@ -134,27 +134,7 @@
       handleFadeOut('results');
       handleFadeOut('discussion');
       handleFadeOut('limits');
-      handleFadeOut('acknowledgements');
-  
-      // Function to handle the slide transition
-      function handleSlideTransition() {
-        const resultsSection = document.getElementById('results');
-        const slidePage = document.getElementById('slide-page');
-        const slidePoint = resultsSection.offsetTop + resultsSection.clientHeight;
-  
-        window.addEventListener('scroll', function() {
-          const scrollPosition = window.scrollY + window.innerHeight;
-  
-          // Trigger slide when scrolled past the results section
-          if (scrollPosition > slidePoint) {
-            slidePage.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Disable scrolling on the main page
-          }
-        });
-      }
-  
-      // Apply slide transition effect
-      handleSlideTransition();
+
     });
   </script>
 </body>
