@@ -5,7 +5,7 @@ title: Home
 
 <!-- Introduction Section -->
 <section id="introduction" class="section bg-light">
-  <div class="container">
+  <div class="intro-content">
     <h2>Introduction</h2>
     <p>
       Under the South Korean Constitution, North Korean defectors are granted legal status as South Korean nationals. Despite their legal status, many face significant challenges, including economic struggles, social stigma, and difficulties in cultural adaptation. This study explores whether defectors are genuinely embraced or if their acceptance is conditional on fulfilling certain favorable expectations, such as embodying positive stereotypes.
@@ -13,12 +13,6 @@ title: Home
     <p>
       The primary objective of this research is to examine the hypothesis that societal acceptance of North Korean defectors in South Korea is conditional. It investigates whether narratives that are positive and empowering enhance societal acceptance. By analyzing these dynamics, the study aims to contribute to a broader discussion on migration, integration, and human rights, shedding light on the challenges and opportunities faced by North Korean defectors.
     </p>
-    <div class="figure-container">
-      <figure>
-        <img src="/defectorinclusion/assets/images/introduction.png" alt="Introduction Image" class="figure-image">
-        <figcaption>Figure: Introduction Visual</figcaption>
-      </figure>
-    </div>
   </div>
 </section>
 
