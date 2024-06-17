@@ -299,7 +299,34 @@ section#limits .container {
 }
 
 section#acknowledgements {
-  background-color: #1e2a38 !important;
+  background: url('/defectorinclusion/assets/images/greyacknowledgements.gif') no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable over the background */
+  position: relative;
+  text-align: center;
+}
+
+section#acknowledgements .intro-content {
+  z-index: 2;
+  text-align: center; /* Center the text content */
+}
+
+section#acknowledgements::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+section#acknowledgements .container {
+  position: relative;
+  z-index: 2;
+  padding: 60px 15px; /* Ensure padding for readability */
+  color: white; /* Set container text color to white */
 }
 
 /* Footer */
