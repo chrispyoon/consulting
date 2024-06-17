@@ -13,6 +13,12 @@ title: Home
     <p>
       The primary objective of this research is to examine the hypothesis that societal acceptance of North Korean defectors in South Korea is conditional. It investigates whether narratives that are positive and empowering enhance societal acceptance. By analyzing these dynamics, the study aims to contribute to a broader discussion on migration, integration, and human rights, shedding light on the challenges and opportunities faced by North Korean defectors.
     </p>
+    <div class="figure-container">
+      <figure>
+        <img src="/defectorinclusion/assets/images/introduction.png" alt="Introduction Image" class="figure-image">
+        <figcaption>Figure: Introduction Visual</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -26,6 +32,12 @@ title: Home
     <p>
       The SA used the VADER library to capture sentiment trends. The TA employed advanced NLP techniques and machine learning models such as Logistic Regression, Support Vector Machines (SVM), and Latent Dirichlet Allocation (LDA) to classify the posts into political, empowering, and discriminating themes.
     </p>
+    <div class="figure-container">
+      <figure>
+        <img src="/defectorinclusion/assets/images/methodology.png" alt="Methodology" class="figure-image">
+        <figcaption>Figure: Methodology Workflow</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -64,6 +76,12 @@ title: Home
     <p>
       Despite the influence of empowering narratives, the significant role of non-empowerment themes suggests that societal acceptance remains conditional. This highlights the need for a societal framework that embraces defectors unconditionally, recognizing their inherent worth and contributions.
     </p>
+    <div class="figure-container">
+      <figure>
+        <img src="/defectorinclusion/assets/images/discussion.png" alt="Discussion" class="figure-image">
+        <figcaption>Figure: Discussion Points</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -71,8 +89,18 @@ title: Home
 <section id="limits" class="section bg-light">
   <div class="container">  
     <h2>Limitations and Future Study</h2>
-    <p>This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.</p>
-    <p>Future analyses will use KoBERT for direct Korean text assessment, improving accuracy. The thematic prediction model's low accuracy (less than 30%), discovered late in the research, suggests a need for a larger sample size—potentially over 15,000—to achieve better accuracy.</p>
+    <p>
+      This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.
+    </p>
+    <p>
+      Future analyses will use KoBERT for direct Korean text assessment, improving accuracy. The thematic prediction model's low accuracy (less than 30%), discovered late in the research, suggests a need for a larger sample size—potentially over 15,000—to achieve better accuracy.
+    </p>
+    <div class="figure-container">
+      <figure>
+        <img src="/defectorinclusion/assets/images/limits.png" alt="Limits" class="figure-image">
+        <figcaption>Figure: Limitations and Future Study Directions</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -83,5 +111,11 @@ title: Home
     <p>
       I want to express my gratitude to several individuals who greatly supported my research journey. First, thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, and Tanushree Sow Mondal, DHSS'2024, for their persistent feedback. Lastly, I am grateful for the mentorship provided by Professor Seo-Hyun Park of the Government and Law Department and the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.
     </p>
+    <div class="figure-container">
+      <figure>
+        <img src="/defectorinclusion/assets/images/acknowledgements.png" alt="Acknowledgements" class="figure-image">
+        <figcaption>Figure: Acknowledgements</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
