@@ -70,7 +70,7 @@ title: Home
 <!-- Limits Section -->
 <section id="limits" class="section bg-light">
   <div class="container">  
-    <h2>Limitations and Future Study</h2>
+    <h2></h2>
     <p>
       This study explores how public opinion affects the life satisfaction of North Korean defectors and the conditional inclusion they face in South Korean society. However, it has limitations: reliance on Naver blog posts may not fully capture societal views, and translation from Korean to English could distort sentiment and thematic analysis.
     </p>
