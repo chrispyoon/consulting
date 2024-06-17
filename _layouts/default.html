@@ -76,12 +76,13 @@
       // Function to handle the fade-out effect for sections
       function handleFadeOut(sectionId) {
         const section = document.getElementById(sectionId);
-        const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
+        const fadeOutPoint = section.offsetTop + sectionHeight / 2;
+  
         window.addEventListener('scroll', function() {
-          const scrollPosition = window.scrollY;
-          if (scrollPosition > sectionTop - sectionHeight / 2) {
+          const scrollPosition = window.scrollY + window.innerHeight;
+  
+          if (scrollPosition > fadeOutPoint) {
             section.style.opacity = '0';
             section.style.transition = 'opacity 0.5s ease-out';
           } else {
