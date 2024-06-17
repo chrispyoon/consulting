@@ -33,7 +33,7 @@ title: Home
 <section id="results" class="section bg-light">
   <div class="container results-container">
     <h2>Results</h2>
-
+    
     <!-- First Row: First Paragraph and First Figure -->
     <div class="results-row">
       <div class="results-half results-left">
