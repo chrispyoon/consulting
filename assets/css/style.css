@@ -117,49 +117,41 @@ a:hover {
 }
 
 /* Backgrounds for Specific Sections */
-section#introduction, section#methodology, section#results, section#second-results, section#discussion, section#limits, section#acknowledgements {
+section#introduction, section#methodology, section#discussion, section#limits, section#acknowledgements {
   background-size: cover;
   position: relative;
   text-align: center;
   color: white;
   padding: 60px 15px;
   width: 100%;
+  background-position: center center;
+  height: 100vh; /* Ensures the section takes full viewport height */
 }
 
 section#introduction {
   background: url('/defectorinclusion/assets/images/Introduction%20Image.webp') no-repeat center center;
-  background-size: cover;
-  height: auto;
 }
 
 section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
-  background-size: cover;
-  height: auto;
 }
 
 section#results, section#second-results {
   background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
   background-size: cover;
-  height: auto;
+  height: 100vh;
 }
 
 section#discussion {
   background: url('/defectorinclusion/assets/images/discussion.png') no-repeat center center;
-  background-size: cover;
-  height: auto;
 }
 
 section#limits {
   background: url('/defectorinclusion/assets/images/limits.gif') no-repeat center center;
-  background-size: cover;
-  height: auto;
 }
 
 section#acknowledgements {
   background: url('/defectorinclusion/assets/images/greyacknowledgements.gif') no-repeat center center;
-  background-size: cover;
-  height: auto;
 }
 
 /* Overlay for Sections */
