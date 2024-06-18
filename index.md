@@ -33,11 +33,8 @@ title: Home
 <section id="results" class="section bg-light">
   <div class="container results-container">
     <h2>SA Results</h2>
-    
     <div class="results-half">
-      <p>
-        The sentiment analysis results show varying percentages of positive sentiment each year, with a noticeable correlation between positive sentiment and life satisfaction among defectors.
-      </p>
+      <p>The sentiment analysis results show varying percentages of positive sentiment each year, with a noticeable correlation between positive sentiment and life satisfaction among defectors.</p>
       <div class="figure-container">
         <figure>
           <img src="/defectorinclusion/assets/images/figure1.png" alt="Figure 1: Sentiment Analysis Results" class="figure-image">
@@ -52,11 +49,8 @@ title: Home
 <section id="second-results" class="section bg-light">
   <div class="container results-container">
     <h2>TA Results</h2>
-    
     <div class="results-half">
-      <p>
-        The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment. Non-empowerment themes also play a significant role, indicating the presence of conditional inclusion.
-      </p>
+      <p>The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment. Non-empowerment themes also play a significant role, indicating the presence of conditional inclusion.</p>
       <div class="figure-container">
         <figure>
           <img src="/defectorinclusion/assets/images/figure2.png" alt="Figure 2: Thematic Analysis Results" class="figure-image">
