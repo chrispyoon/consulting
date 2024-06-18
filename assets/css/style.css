@@ -132,10 +132,10 @@ section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
 }
 
-section#results {
+section#results, section#second-results {
   background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
   background-size: cover;
-  height: 200vh; /* Double the height */
+  height: 100vh; /* Adjust height if necessary */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +173,7 @@ section::before {
 }
 
 /* Results Section Adjustments */
-.results-container {
+.results-container, .second-results-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,13 +194,13 @@ section::before {
 .results-half .figure-container {
   margin-top: 10px;
   width: 100%;
+  max-width: 800px; /* Adjust max-width to match text width */
 }
 
 .results-half .figure-container img {
   width: 100%;
-  max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 15px; /* Add soft edges */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -241,8 +241,8 @@ section::before {
 
   .section {
     padding: 30px 15px;
-    height: auto; /* Allow sections to adjust height automatically */
-    min-height: 100vh; /* Ensure each section is at least full viewport height */
+    height: auto;
+    min-height: 100vh;
   }
 
   .results-half {
