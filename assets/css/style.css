@@ -117,7 +117,7 @@ a:hover {
 }
 
 /* Backgrounds for Specific Sections */
-section#introduction, section#methodology, section#results, section#discussion, section#limits, section#acknowledgements {
+section#introduction, section#methodology, section#results, section#second-results, section#discussion, section#limits, section#acknowledgements {
   background-size: cover;
   position: relative;
   text-align: center;
@@ -132,10 +132,19 @@ section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
 }
 
-section#results, section#second-results {
+section#results {
   background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
   background-size: cover;
-  height: 100vh; /* Adjust height if necessary */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section#second-results {
+  background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,6 +179,7 @@ section::before {
   z-index: 2;
   padding: 60px 15px;
   color: white;
+  max-width: 1000px;
 }
 
 /* Results Section Adjustments */
@@ -182,7 +192,7 @@ section::before {
 
 .results-half {
   width: 100%;
-  max-width: 45%;
+  max-width: 800px;
   text-align: center;
   margin: 20px auto;
 }
@@ -194,7 +204,7 @@ section::before {
 .results-half .figure-container {
   margin-top: 10px;
   width: 100%;
-  max-width: 800px; /* Adjust max-width to match text width */
+  max-width: 800px; /* Ensure figures are aligned with text width */
 }
 
 .results-half .figure-container img {
