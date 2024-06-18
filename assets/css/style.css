@@ -134,7 +134,9 @@ section#methodology {
   color: white;
   padding: 60px 15px;
 }
+
 section#results, section#second-results {
+  background-color: #808080;
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
   background-size: cover; /* Ensures image covers the entire section */
   background-position: center center; /* Centers the image */
@@ -271,31 +273,7 @@ section::before {
   background-color: #1e2a38;
   color: white;
   padding: 20px 0;
-  margin-bottom: 0; /* Ensure no extra margin at the bottom */
 }
-
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #333;
-}
-
-/* Ensure there is no extra padding or margin on the body */
-html, body {
-  height: 100%;
-}
-
-main {
-  min-height: 100vh; /* Ensure main content takes full viewport height */
-  margin-bottom: -20px; /* Offset for padding in footer */
-}
-
-.content {
-  padding-bottom: 60px; /* Adjust for footer height if necessary */
-}
-
 .footer .social-links a {
   color: white;
   font-size: 1.5rem;
