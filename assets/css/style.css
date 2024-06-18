@@ -5,7 +5,38 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: #333;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  display: flex;
+  flex-direction: column; /* Allow main content to flex */
 }
+
+html {
+  height: 100%; /* Ensure html takes full viewport height */
+}
+
+main {
+  flex: 1; /* Allow main content to expand to fill space */
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  min-height: 100vh; /* Ensure each section takes full viewport height */
+}
+
+/* Footer */
+.footer {
+  background-color: #1e2a38;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto; /* Ensure footer is at the bottom of the page */
+}
+
 a {
   text-decoration: none;
   color: inherit;
