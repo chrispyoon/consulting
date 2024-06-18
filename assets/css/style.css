@@ -130,28 +130,80 @@ section#introduction, section#methodology, section#discussion, section#limits, s
 
 section#introduction {
   background: url('/defectorinclusion/assets/images/Introduction%20Image.webp') no-repeat center center;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 section#results, section#second-results {
   background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
-  background-size: cover;
-  height: 100vh;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 section#discussion {
   background: url('/defectorinclusion/assets/images/discussion.png') no-repeat center center;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 section#limits {
   background: url('/defectorinclusion/assets/images/limits.gif') no-repeat center center;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 section#acknowledgements {
   background: url('/defectorinclusion/assets/images/greyacknowledgements.gif') no-repeat center center;
+  background-size: cover; /* Ensures image covers the entire section */
+  background-position: center center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 60px 15px;
 }
 
 /* Overlay for Sections */
