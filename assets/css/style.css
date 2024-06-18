@@ -155,7 +155,7 @@ section#methodology {
 }
 
 section#results, section#second-results {
-  background-color: #808080;
+  background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
   background-size: cover; /* Ensures image covers the entire section */
   background-position: center center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents image repetition */
