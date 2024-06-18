@@ -128,10 +128,14 @@ section#introduction, section#methodology, section#results, section#second-resul
 
 section#introduction {
   background: url('/defectorinclusion/assets/images/Introduction%20Image.webp') no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 section#results, section#second-results {
@@ -142,14 +146,20 @@ section#results, section#second-results {
 
 section#discussion {
   background: url('/defectorinclusion/assets/images/discussion.png') no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 section#limits {
   background: url('/defectorinclusion/assets/images/limits.gif') no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 section#acknowledgements {
   background: url('/defectorinclusion/assets/images/greyacknowledgements.gif') no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 /* Overlay for Sections */
