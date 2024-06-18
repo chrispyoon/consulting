@@ -18,7 +18,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,17 +36,17 @@ a:hover {
 }
 
 .hero-heading {
-  font-size: 2.5rem; /* Base size for h1 */
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subheading {
-  font-size: 1.8rem; /* 80% of the h1 size */
+  font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contact-link {
@@ -91,20 +91,20 @@ a:hover {
 
 /* Section Styles */
 .section {
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 15px; /* Adjust padding for better readability */
+  padding: 60px 15px;
   transition: background-color 0.3s ease;
 }
 
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #fff; /* Set section heading to white for better visibility */
+  color: #fff;
   text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section p {
@@ -113,195 +113,142 @@ a:hover {
   text-align: justify;
   margin: 0 auto;
   max-width: 800px;
-  color: #fff; /* Set text to white for better visibility */
+  color: #fff;
 }
 
-/* Specific Backgrounds for Sections */
+/* Backgrounds for Specific Sections */
+section#introduction, section#methodology, section#results, section#discussion, section#limits, section#acknowledgements {
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 section#introduction {
   background: url('/defectorinclusion/assets/images/Introduction%20Image.webp') no-repeat center center;
-  background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
 }
 
-section#introduction .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#introduction::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-section#introduction .container {
-  position: relative;
-  z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
-}
-
-/* Adjustments for Other Sections */
 section#methodology {
   background: url('/defectorinclusion/assets/images/methodology.webp') no-repeat center center;
-  background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
-}
-
-section#methodology .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#methodology::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-section#methodology .container {
-  position: relative;
-  z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
 }
 
 section#results {
   background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
   background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
-}
-
-section#results .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#results::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-section#results .container {
-  position: relative;
-  z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
+  height: 200vh; /* Double the height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 section#discussion {
   background: url('/defectorinclusion/assets/images/discussion.png') no-repeat center center;
-  background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
-}
-
-section#discussion .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#discussion::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-section#discussion .container {
-  position: relative;
-  z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
 }
 
 section#limits {
   background: url('/defectorinclusion/assets/images/limits.gif') no-repeat center center;
-  background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
-}
-
-section#limits .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#limits::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-section#limits .container {
-  position: relative;
-  z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
 }
 
 section#acknowledgements {
   background: url('/defectorinclusion/assets/images/greyacknowledgements.gif') no-repeat center center;
-  background-size: cover;
-  color: white; /* Ensure text is readable over the background */
-  position: relative;
-  text-align: center;
 }
 
-section#acknowledgements .intro-content {
-  z-index: 2;
-  text-align: center; /* Center the text content */
-}
-
-section#acknowledgements::before {
+/* Overlay for Sections */
+section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-section#acknowledgements .container {
+.section .container {
   position: relative;
   z-index: 2;
-  padding: 60px 15px; /* Ensure padding for readability */
-  color: white; /* Set container text color to white */
+  padding: 60px 15px;
+  color: white;
+}
+
+/* Results Section Adjustments */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-half {
+  width: 100%;
+  max-width: 45%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.results-half p {
+  text-align: justify;
+}
+
+.results-half .figure-container {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.results-half .figure-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-half .figure-container figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .hero-heading {
+    font-size: 1.8rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.2rem;
+  }
+
+  .contact-link {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .section {
+    padding: 30px 15px;
+    height: auto; /* Allow sections to adjust height automatically */
+    min-height: 100vh; /* Ensure each section is at least full viewport height */
+  }
+
+  .results-half {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 /* Footer */
@@ -324,203 +271,4 @@ section#acknowledgements .container {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
-}
-
-/* Additional Custom Styles */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.main-content {
-  padding: 60px 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero {
-    height: 100vh; /* Ensure hero covers full viewport height on smaller screens */
-    padding: 20px;
-  }
-
-  .hero-heading {
-    font-size: 1.8rem; /* Adjust title size for smaller screens */
-  }
-
-  .hero-subheading {
-    font-size: 1.2rem; /* Adjust subtitle size for smaller screens */
-  }
-
-  .contact-link {
-    font-size: 1rem;
-    padding: 8px;
-  }
-
-  .navbar {
-    display: none; /* Hide the navbar on mobile */
-  }
-
-  .navbar-toggler {
-    display: none; /* Hide the hamburger menu button on mobile */
-  }
-
-  .section {
-    padding: 30px 15px; /* Reduce padding for sections on smaller screens */
-    height: 100vh; /* Full viewport height for sections on smaller screens */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section h2 {
-    font-size: 1.5rem; /* Adjust section heading size */
-  }
-
-  .section p {
-    font-size: 1rem; /* Adjust section paragraph size */
-    line-height: 1.4;
-  }
-
-  .footer {
-    padding: 15px 0; /* Adjust footer padding */
-  }
-
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-  }
-    
-  .section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 15px; /* Adjust padding for better readability */
-    transition: background-color 0.3s ease;
-  }
-  
-  #slide-page {
-    position: fixed;
-    top: 0;
-    left: 100%; /* Start off-screen to the right */
-    width: 100vw;
-    height: 100vh;
-    background-color: #000; /* Black background */
-    color: #fff;
-    z-index: 10;
-    transition: left 0.5s ease-out; /* Slide-in effect */
-  }
-  
-  #slide-page.active {
-    left: 0; /* Slide into view */
-  }
-  
-  /* Results Section Adjustments */
-  section#results {
-    height: 200vh; /* Double the height */
-    background: url('/defectorinclusion/assets/images/results.gif') no-repeat center center;
-    background-size: cover;
-    color: white; /* Ensure text is readable over the background */
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 60px 15px; /* Adjust padding for better readability */
-  }
-  
-  section#results::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-    z-index: 1;
-  }
-  
-  section#results .container {
-    position: relative;
-    z-index: 2;
-    max-width: 1000px; /* Adjust the max-width to suit your needs */
-    margin: 0 auto;
-    padding: 60px 15px;
-    color: white; /* Set container text color to white */
-  }
-  
-  .results-row {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure items don't wrap */
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 20px 0; /* Add margin for spacing between rows */
-  }
-  
-  .results-half {
-    flex: 0 1 48%; /* Each half takes up about 48% of the row */
-    text-align: center;
-    margin: 10px 0; /* Add margin for spacing */
-  }
-  
-  .results-half p {
-    margin: 0 auto;
-    width: 100%;
-    text-align: justify; /* Align text for better readability */
-  }
-  
-  .results-half .figure-container {
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .results-half .figure-container img {
-    width: 100%;
-    max-width: 100%; /* Ensure images do not exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .results-half .figure-container figcaption {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  /* Responsive Design Adjustments */
-  @media (max-width: 768px) {
-    .results-row {
-      flex-direction: column;
-    }
-  
-    .results-half {
-      width: 100%; /* Make each half full width on smaller screens */
-      margin: 20px 0;
-    }
-  }
-  
 }
