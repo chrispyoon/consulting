@@ -47,7 +47,7 @@ title: Home
 <section id="second-results" class="section bg-light">
   <div class="container second-results-container">
     <h2>TA Results</h2>
-    <p>The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment. Non-empowerment themes also play a significant role, indicating the presence of conditional inclusion.</p>
+    <p>The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment, indicating the presence of conditional inclusion.</p>
     <div class="figure-container">
       <figure>
         <img src="/defectorinclusion/assets/images/figure2.png" alt="Figure 2: Thematic Analysis Results" class="figure-image" style="width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto;">
