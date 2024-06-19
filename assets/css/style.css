@@ -258,7 +258,7 @@ section::before {
 
 .results-half .figure-container {
   margin-top: 10px;
-  width: 100%; /* Matches the max-width of the results-half */
+  width: 80%; /* Matches the max-width of the results-half */
   max-width: 800px; /* Ensures the image and text have the same max width */
   text-align: center;
 }
