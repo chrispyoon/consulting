@@ -251,16 +251,30 @@ section::before {
 .results-half p {
   text-align: justify;
 }
+
+.results-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  margin: 20px auto;
+}
+
 .results-half .figure-container {
   margin-top: 10px;
-  width: 60%;
+  width: 60%; /* 60% of the container */
+  text-align: center; /* Center text within the container */
 }
+
 .results-half .figure-container img {
-  width: 100%;
-  height: auto;
+  display: block; /* Remove any inline display properties */
+  margin-left: auto; /* Center image horizontally */
+  margin-right: auto; /* Center image horizontally */
+  width: 100%; /* Fill the container width */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 15px; /* Add soft edges */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .results-half .figure-container figcaption {
   text-align: center;
   margin-top: 10px;
