@@ -233,8 +233,7 @@ section::before {
   color: white;
   max-width: 1200px;
   margin: 0 auto;
-}
-/* Results Section Adjustments */
+}/* Results Section Adjustments */
 .results-container, .second-results-container {
   display: flex;
   flex-direction: column;
@@ -242,24 +241,22 @@ section::before {
   align-items: center;
   width: 100%;
 }
+
 .results-half {
   width: 100%;
   max-width: 800px;
   text-align: center;
   margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
 }
+
 .results-half p {
   text-align: justify;
 }
 
-.results-half {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  margin: 20px auto;
-}
-
-.results-half .figure-container {
+.result.figure-container {
   margin-top: 10px;
   width: 80%; /* 60% of the container */
   text-align: center; /* Center text within the container */
@@ -267,8 +264,7 @@ section::before {
 
 .results-half .figure-container img {
   display: block; /* Remove any inline display properties */
-  margin-left: auto; /* Center image horizontally */
-  margin-right: auto; /* Center image horizontally */
+  margin: 0 auto; /* Center image horizontally */
   width: 100%; /* Fill the container width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 15px; /* Add soft edges */
@@ -281,6 +277,7 @@ section::before {
   font-size: 0.9rem;
   color: #555;
 }
+
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .hero {
