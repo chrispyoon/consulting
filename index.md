@@ -11,7 +11,7 @@ title: Home
       North Korean defectors in South Korea face economic struggles, social stigma, and difficulties in cultural adaptation. This study explores whether defectors are genuinely embraced or if their acceptance is conditional on fulfilling certain favorable expectations, such as embodying positive stereotypes.
     </p>
     <p>
-      The sudy aims to prove the hypothesis that societal acceptance of North Korean defectors in South Korea is conditional. It investigates whether narratives that are positive and empowering enhance societal acceptance. By analyzing these dynamics, the study aims to contribute to a broader discussion on migration and integration.
+      The study aims to prove the hypothesis that societal acceptance of North Korean defectors in South Korea is conditional. It investigates whether narratives that are positive and empowering enhance societal acceptance. The study aims to contribute to a broader discussion on migration and integration by analyzing these dynamics.
     </p>
   </div>
 </section>
@@ -21,7 +21,7 @@ title: Home
   <div class="container">
     <h2>Methodology</h2>
     <p>
-      This study collected data from blog posts in Korean for sentiment analysis (SA) and thematic analysis (TA). The SA focused on posts that mentioned "North Korean Defector" (탈북민/t'albungmin), collected using the Naver API. The data was translated into English for analysis.
+      This study collected data from Naver API for sentiment analysis (SA) and thematic analysis (TA). The SA focused on posts that mentioned "North Korean Defector" (탈북민/t'albungmin), collected using the Naver API. The data was translated into English for analysis.
     </p>
     <p>
       The SA used the VADER library to capture sentiment trends. The TA employed advanced NLP techniques and machine learning models such as Logistic Regression, Support Vector Machines (SVM), and Latent Dirichlet Allocation (LDA) to classify the posts into political, empowering, and discriminating themes.
