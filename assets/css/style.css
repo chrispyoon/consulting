@@ -261,7 +261,7 @@ section::before {
 
 .results-half .figure-container {
   margin-top: 10px;
-  width: 70%; /* 60% of the container */
+  width: 80%; /* 60% of the container */
   text-align: center; /* Center text within the container */
 }
 
