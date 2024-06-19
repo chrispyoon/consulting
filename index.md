@@ -34,7 +34,7 @@ title: Home
   <div class="container results-container">
     <h2>SA Results</h2>
     <div class="results-half">
-      <p>The sentiment analysis results show varying percentages of positive sentiment each year, with a noticeable correlation between positive sentiment and life satisfaction among defectors.</p>
+      <p>The sentiment analysis results show varying percentages of positive sentiment each year.</p>
       <div class="figure-container">
         <figure>
           <img src="/defectorinclusion/assets/images/figure1.png" alt="Figure 1: Sentiment Analysis Results" class="figure-image">
