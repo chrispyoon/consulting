@@ -233,7 +233,8 @@ section::before {
   color: white;
   max-width: 1200px;
   margin: 0 auto;
-  /* Results Section Adjustments */
+
+/* Results Section Adjustments */
 .results-container, .second-results-container {
   display: flex;
   flex-direction: column;
@@ -258,8 +259,8 @@ section::before {
 
 .results-half .figure-container {
   margin-top: 10px;
-  width: 80%; /* Matches the max-width of the results-half */
-  max-width: 800px; /* Ensures the image and text have the same max width */
+  width: 80%; /* Set width to 80% of the text container */
+  max-width: 640px; /* Ensure the max-width aligns with 80% of the max-width of text */
   text-align: center;
 }
 
@@ -267,7 +268,6 @@ section::before {
   display: block;
   margin: 0 auto;
   width: 100%; /* Fill the container width */
-  max-width: 800px; /* Ensures image width is consistent with text width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 15px; /* Add soft edges */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
