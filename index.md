@@ -92,7 +92,7 @@ title: Home
   <div class="container">
     <h2>Acknowledgements</h2>
     <p>
-      Thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, and Tanushree Sow Mondal, DHSS'2024, for their persistent feedback. Lastly, I am grateful for the mentorship provided by Professor Seo-Hyun Park of the Government and Law Department and the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.
+      Thank you to Angela Perkins, the Director of Digital Scholarship Services at Lafayette College, for supporting me with my first machine learning research project. I am also grateful to Associate Professor Caleb Gallemore from the International Affairs Department at Lafayette College for his insights into statistical methods. Yazdan Basir, a Data Engineer at SEI, provided valuable advice on data analysis. I also thank Sidath Chandrasena, DHSS’2023 teaching fellow, and Tanushree Sow Mondal, DHSS'2024, for their persistent feedback. Lastly, I am grateful for the mentorship provided by Professor Seo-Hyun Park of the Government and Law Department and the Chair of the Asian Studies Program at Lafayette College, who generously shared her expertise and guidance.
     </p>
   </div>
 </section>
