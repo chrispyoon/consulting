@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
 header .logo img {
-  height: 100px; /* Adjust height as needed */
+  height: 150px; /* Adjust height as needed */
 }
 
 main {
@@ -69,4 +69,12 @@ footer ul.social li {
 footer ul.social li a {
   color: #fff;
   text-decoration: none;
+}
+
+a {
+  color: #ff0000; /* Red accent color for links */
+}
+
+a:hover {
+  color: #cc0000; /* Darker red for hover state */
 }
