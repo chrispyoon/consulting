@@ -10,7 +10,7 @@ title: Home
       <h2>Statement from the Founder</h2>
     </div>
     <div id="statement-content" class="statement-details">
-      <p><strong>From Pennsylvania, USA</strong></p>
+      <p><strong>From New York, USA</strong></p>
       <p><strong>April 17, 2024</strong></p>
 
       <h2>Why Study Abroad?</h2>
@@ -38,7 +38,7 @@ title: Home
 
       <p>I have offered free US college scholarship consulting to acquaintances and served as a board member for refugee support organizations, but I feel I can do more. When I first ventured into studying abroad, attempted to drop out, published a book, or prepared for scholarship applications, the lack of senior guidance was frustrating and daunting.</p>
 
-      <p><strong>I want to make sure you don't have to struggle as much as I did. I plan to organize a gathering in New York soon, and I sincerely hope you will be there.</strong></p>
+      <p><strong>I want to make sure you don't have to struggle as much as I did. Hope I can see you in New York in the near future.</strong></p>
 
       <p><strong>Best,<br>Chris Yoon</strong></p>
     </div>
