@@ -13,7 +13,7 @@ body {
 header {
   background: #fff; /* Change background to white */
   color: #333; /* Change text color to black or dark color for contrast */
-  padding: 20px 0;
+  padding: 10px 0; /* Reduce padding to bring header closer */
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ header h1 {
 }
 
 header nav {
-  margin-top: 10px;
+  margin-top: 5px; /* Reduce top margin */
 }
 
 header nav ul {
@@ -46,7 +46,7 @@ header .logo img {
 }
 
 main {
-  padding: 20px 0;
+  padding: 10px 0; /* Reduce padding to bring main content closer */
 }
 
 footer {
@@ -81,7 +81,7 @@ a:hover {
 
 /* Section Styling */
 .section {
-  padding: 40px 0;
+  padding: 20px 0; /* Reduce padding to make sections closer */
 }
 
 .bg-white {
@@ -114,7 +114,7 @@ a:hover {
 
 /* Statement Content Styling */
 .statement-content {
-  margin-top: 20px;
+  margin-top: 10px; /* Reduce top margin */
 }
 
 .statement-details {
