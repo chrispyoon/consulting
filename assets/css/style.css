@@ -2,7 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* All white background */
+  background-color: #fff;
+}
+
+.bg-container {
+  background-image: url('/consulting/assets/images/rainbow.jpg'); /* Set background image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
 }
 
 .container {
@@ -11,9 +17,8 @@ body {
 }
 
 header {
-  background: #fff; /* Change background to white */
-  color: #333; /* Change text color to black or dark color for contrast */
-  padding: 10px 0; /* Reduce padding to bring header closer */
+  color: #333;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -23,7 +28,7 @@ header h1 {
 }
 
 header nav {
-  margin-top: 10px; /* Reduce top margin */
+  margin-top: 10px;
 }
 
 header nav ul {
@@ -37,20 +42,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #333; /* Change link color to match the new header text color */
+  color: #333;
   text-decoration: none;
 }
 
 header .logo img {
-  height: 150px; /* Adjust height as needed */
+  height: 150px;
 }
 
 main {
   padding: 20px 0;
-  background-image: url('/consulting/assets/images/rainbow.jpg'); /* Set background image */
-  background-size: cover; /* Ensure the image covers the entire area */
-  background-position: center; /* Center the image */
-  min-height: 100vh; /* Ensure main takes at least the full height of the viewport */
+  min-height: 100vh;
 }
 
 footer {
@@ -76,16 +78,15 @@ footer ul.social li a {
 }
 
 a {
-  color: #ff0000; /* Red accent color for links */
+  color: #ff0000;
 }
 
 a:hover {
-  color: #cc0000; /* Darker red for hover state */
+  color: #cc0000;
 }
 
-/* Section Styling */
 .section {
-  padding: 20px 0; /* Reduce padding to make sections closer */
+  padding: 20px 0;
 }
 
 .bg-white {
@@ -96,7 +97,6 @@ a:hover {
   background-color: #f4f4f4;
 }
 
-/* Statement Bar Styling */
 .statement-bar {
   background-color: #333;
   color: #fff;
@@ -116,9 +116,8 @@ a:hover {
   font-size: 1.5em;
 }
 
-/* Statement Content Styling */
 .statement-content {
-  margin-top: 10px; /* Reduce top margin */
+  margin-top: 10px;
 }
 
 .statement-details {
