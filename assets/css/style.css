@@ -47,7 +47,7 @@ header .logo img {
 
 main {
   padding: 20px 0;
-  background-image: url('assets/images/rainbow.jpg'); /* Set background image */
+  background-image: url('/assets/images/rainbow.jpg'); /* Set background image */
   background-size: cover; /* Ensure the image covers the entire area */
   background-position: center; /* Center the image */
   min-height: 100vh; /* Ensure main takes at least the full height of the viewport */
