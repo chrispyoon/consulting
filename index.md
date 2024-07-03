@@ -44,3 +44,14 @@ title: Home
     </div>
   </div>
 </section>
+
+<script>
+  function toggleStatement() {
+    var content = document.getElementById('statement-content');
+    if (content.style.display === "none" || content.style.display === "") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  }
+</script>
