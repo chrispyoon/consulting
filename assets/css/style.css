@@ -23,7 +23,7 @@ header h1 {
 }
 
 header nav {
-  margin-top: 5px; /* Reduce top margin */
+  margin-top: 10px; /* Reduce top margin */
 }
 
 header nav ul {
