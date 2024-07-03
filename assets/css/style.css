@@ -46,7 +46,10 @@ header .logo img {
 }
 
 main {
-  padding: 10px 0; /* Reduce padding to bring main content closer */
+  padding: 20px 0;
+  background-image: url('assets/images/rainbow.jpg'); /* Set background image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
 }
 
 footer {
