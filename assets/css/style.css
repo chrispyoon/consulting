@@ -78,3 +78,38 @@ a {
 a:hover {
   color: #cc0000; /* Darker red for hover state */
 }
+
+/* Section Styling */
+.section {
+  padding: 40px 0;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+/* Letter Content Styling */
+.letter-content {
+  text-align: left;
+}
+
+.letter-content h2 {
+  color: #cc0000; /* Red accent color for headings */
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.letter-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.letter-content p strong {
+  color: #333;
+  font-weight: bold;
+}
