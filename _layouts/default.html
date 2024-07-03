@@ -3,103 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Defector Inclusion Research</title>
-  <link rel="stylesheet" href="/defectorinclusion/assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body style="font-family: 'Poppins', sans-serif;">
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand" href="#home">Chrispy College Consulting</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
-          <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
-          <li class="nav-item"><a class="nav-link" href="#results">SA</a></li>
-          <li class="nav-item"><a class="nav-link" href="#second-results">TA</a></li>
-          <li class="nav-item"><a class="nav-link" href="#discussion">Discussion</a></li>
-          <li class="nav-item"><a class="nav-link" href="#limits">Limits</a></li>
-          <li class="nav-item"><a class="nav-link" href="#acknowledgements">Acknowledgements</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1 class="hero-heading">Unveiling Exclusion by Machine Learning</h1>
-      <h2 class="hero-subheading">The Case for North Korean Defectors</h2>
-      <a href="mailto:yoond@lafayette.edu" class="contact-link mt-4 mb-2">Contact</a>
-    </div>
-  </section>
-  
-  <!-- Main Content -->
-  <main class="content">
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/testimonials/' | relative_url }}">Testimonials</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Chrispy College Consulting</h1>
+  </header>
+  <main>
     {{ content }}
   </main>
-  
-  <!-- Footer -->
-  <footer class="footer bg-dark text-white py-4">
-    <div class="container text-center">
-      <p>&copy; 2024 Chris Dongjoon Yoon. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/chrispyoon" class="text-white mr-3"><i class="fab fa-github"></i></a>
-        <a href="https://facebook.com/chrisdjyoon" class="text-white mr-3"><i class="fab fa-facebook"></i></a>
-        <a href="https://linkedin.com/in/chrisdyoon" class="text-white"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
+  <footer>
+    <p>&copy; 2024 Chrispy College Consulting. All rights reserved.</p>
+    <ul>
+      <li><a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a></li>
+      <li><a href="{{ '/terms-of-service/' | relative_url }}">Terms of Service</a></li>
+    </ul>
   </footer>
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Font Awesome for social icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
-  <!-- JavaScript for Smooth Scrolling and Hide Sections on Scroll -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Add smooth scrolling to all internal links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-      // Function to handle the fade-out effect for sections
-      function handleFadeOut(sectionId) {
-        const section = document.getElementById(sectionId);
-        const sectionHeight = section.clientHeight;
-        const fadeOutPoint = section.offsetTop + (sectionHeight * 1.0); // Set to 100% of the section height
-        window.addEventListener('scroll', function() {
-          const scrollPosition = window.scrollY + window.innerHeight;
-          // Start fading out only when completely scrolled past the section's height
-          if (scrollPosition > fadeOutPoint) {
-            section.style.opacity = '0';
-            section.style.transition = 'opacity 0.5s ease-out';
-          } else {
-            section.style.opacity = '1';
-          }
-        });
-      }
-      // Apply fade-out effect to each section
-      handleFadeOut('hero');
-      handleFadeOut('introduction');
-      handleFadeOut('methodology');
-      handleFadeOut('results');
-      handleFadeOut('second-results');
-      handleFadeOut('discussion');
-      handleFadeOut('limits');
-    });
-  </script>
 </body>
 </html>
