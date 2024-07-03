@@ -10,8 +10,17 @@ body {
   margin: 0 auto;
 }
 
+.content-wrapper {
+  background-image: url('/consulting/assets/images/rainbow.jpg'); /* Set background image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-position: center; /* Center the image */
+  min-height: 100vh; /* Ensure it takes at least the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
 header {
-  background: #fff;
+  background: transparent; /* Make header background transparent */
   color: #333;
   padding: 10px 0;
   text-align: center;
@@ -46,11 +55,8 @@ header .logo img {
 }
 
 main {
+  flex: 1;
   padding: 20px 0;
-  background-image: url('/consulting//assets/images/rainbow.jpg'); /* Ensure the image path is correct */
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
 }
 
 footer {
