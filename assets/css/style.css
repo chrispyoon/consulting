@@ -5,19 +5,13 @@ body {
   background-color: #fff;
 }
 
-.bg-container {
-  background-image: url('/consulting/assets/images/rainbow.jpg'); /* Set background image */
-  background-size: cover; /* Ensure the image covers the entire area */
-  background-position: center; /* Center the image */
-  padding-bottom: 20px; /* Ensure some space between main content and footer */
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
 }
 
 header {
+  background: #fff;
   color: #333;
   padding: 10px 0;
   text-align: center;
@@ -53,6 +47,9 @@ header .logo img {
 
 main {
   padding: 20px 0;
+  background-image: url('consulting//assets/images/rainbow.jpg'); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
 }
 
