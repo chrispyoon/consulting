@@ -40,7 +40,7 @@ title: Home
 
       <p><strong>I want to make sure you don't have to struggle as much as I did. Hope I can see you in New York in the near future.</strong></p>
 
-      <p><strong>Best,<br>Chris Yoon</strong></p>
+      <p><strong>Best,<br><a href="https://www.linkedin.com/in/chrisdyoon" target="_blank">Chris Yoon</a></strong></p>
     </div>
   </div>
 </section>
