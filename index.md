@@ -34,7 +34,7 @@ title: Home
       <p><strong>I won't wait for people like him to find me by chance. I will seek out those with strong critical thinking, big dreams, and the determination to make them a reality, and bring them to the forefront.</strong></p>
 
       <h2>A Brief Introduction About Myself</h2>
-      <p>I grew up in South Korea, the Philippines, and the United States. I am the first Korean male dropout to attend a top 30 Liberal Arts College in the US on a scholarship. My journey is unique, and I've met many students with challenging backgrounds. I want to find and support others like my past self.</p>
+      <p>I grew up in South Korea, the Philippines, and the United States. I am the first Korean male high school dropout to attend a top 30 Liberal Arts College in the US on a scholarship. My journey is unique, and I've met many students with challenging backgrounds. I want to find and support others like my past self.</p>
 
       <p>I have offered free US college scholarship consulting to acquaintances and served as a board member for refugee support organizations, but I feel I can do more. When I first ventured into studying abroad, attempted to drop out, published a book, or prepared for scholarship applications, the lack of senior guidance was frustrating and daunting.</p>
 
