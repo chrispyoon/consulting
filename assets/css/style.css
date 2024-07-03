@@ -47,7 +47,7 @@ header .logo img {
 
 main {
   padding: 20px 0;
-  background-image: url('consulting//assets/images/rainbow.jpg'); /* Ensure the image path is correct */
+  background-image: url('/consulting//assets/images/rainbow.jpg'); /* Ensure the image path is correct */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
