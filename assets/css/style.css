@@ -9,6 +9,7 @@ body {
   background-image: url('/consulting/assets/images/rainbow.jpg'); /* Set background image */
   background-size: cover; /* Ensure the image covers the entire area */
   background-position: center; /* Center the image */
+  padding-bottom: 20px; /* Ensure some space between main content and footer */
 }
 
 .container {
