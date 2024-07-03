@@ -8,17 +8,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="{{ '/assets/images/cccc.png' | relative_url }}" alt="Consulting Logo">
-    </div>
-  </header>
+  <div class="content-wrapper">
+    <header>
+      <div class="logo">
+        <img src="{{ '/assets/images/cccc.png' | relative_url }}" alt="Consulting Logo">
+      </div>
+    </header>
 
-  <main>
-    <div class="container">
-      {{ content }}
-    </div>
-  </main>
+    <main>
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+  </div>
 
   <footer>
     <div class="container">
