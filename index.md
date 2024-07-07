@@ -30,12 +30,6 @@ title: Home
 <section id="results" class="section bg-light">
   <div class="container results-container">
     <h2>SA Results</h2>
-    <p>The sentiment analysis results show varying percentages of positive sentiment each year.</p>
-    <div class="figure-container">
-      <figure>
-        <img src="/defectorinclusion/assets/images/figure1.png" alt="Figure 1: Sentiment Analysis Results" class="figure-image" style="width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto;">
-        <figcaption style="text-align: center; margin-top: 10px; font-size: 0.9rem; color: #555;">Figure 1: Sentiment Analysis Results</figcaption>
-      </figure>
     <div class="results-half">
       <p>The sentiment analysis results show varying percentages of positive sentiment each year.</p>
       <div class="figure-container">
@@ -51,12 +45,6 @@ title: Home
 <section id="second-results" class="section bg-light">
   <div class="container second-results-container">
     <h2>TA Results</h2>
-    <p>The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment, indicating the presence of conditional inclusion.</p>
-    <div class="figure-container">
-      <figure>
-        <img src="/defectorinclusion/assets/images/figure2.png" alt="Figure 2: Thematic Analysis Results" class="figure-image" style="width: 100%; max-width: 800px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto;">
-        <figcaption style="text-align: center; margin-top: 10px; font-size: 0.9rem; color: #555;">Figure 2: Thematic Analysis Results</figcaption>
-      </figure>
     <div class="results-half">
       <p>The thematic analysis reveals that the empowerment theme consistently emerged as the most prominent narrative but only explains a portion of the positive sentiment, indicating the presence of conditional inclusion.</p>
       <div class="figure-container">
